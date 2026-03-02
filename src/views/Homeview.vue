@@ -54,7 +54,7 @@ import Footer from "../components/Footer.vue";
 
         <a
           href="#"
-          class="inline-block bg-lime-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-purple-700 transition"
+          class="inline-block bg-lime-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-lime-700 transition"
         >
           Create Free Account
         </a>
@@ -72,63 +72,67 @@ import Footer from "../components/Footer.vue";
   <div class="max-w-7xl mx-auto px-4 py-16">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
       <!-- Card 1 -->
-      <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition">
-        <div class="mb-6 text-[#fb7756] text-3xl">
+      <div
+        class="bg-white rounded-xl shadow-sm hover:shadow-lg transition text-center flex flex-col justify-center p-6 h-72"
+      >
+        <div class="mb-6 text-green-600 text-3xl">
           <i class="fa-solid fa-briefcase"></i>
         </div>
-        <h3 class="text-xl font-semibold mb-3">Professional Services</h3>
-        <p class="text-gray-500 mb-4">
-          Explore Quidly's seamless payment solutions under our dedicated
-          Professional Services.
-        </p>
-        <a href="#" class="text-blue-600 font-medium hover:underline">
-          Read More
-        </a>
+        <div class="flex-1 flex flex-col justify-center">
+          <h3 class="text-xl font-semibold mb-3">Professional Services</h3>
+          <p class="text-gray-500 mb-4">
+            Explore Quidly's seamless payment solutions under our dedicated
+            Professional Services.
+          </p>
+        </div>
       </div>
 
       <!-- Card 2 -->
-      <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition">
-        <div class="mb-6 text-[#facd60] text-3xl">
-          <font-awesome-icon icon="fa-solid fa-wallet" />
+      <div
+        class="bg-white rounded-xl shadow-sm hover:shadow-lg transition text-center flex flex-col items-center p-6 h-72"
+      >
+        <div class="mb-6 text-green-600 text-3xl">
+          <i class="fa-solid fa-wallet"></i>
         </div>
-        <h3 class="text-xl font-semibold mb-3">Low Costing</h3>
-        <p class="text-gray-500 mb-4">
-          Our unique implementation of innovative solutions is cost-effective
-          compared to other operational approaches.
-        </p>
-        <a href="#" class="text-blue-600 font-medium hover:underline">
-          Read More
-        </a>
+        <div class="flex-1 flex flex-col justify-center">
+          <h3 class="text-xl font-semibold mb-3">Low Costing</h3>
+          <p class="text-gray-500 mb-4">
+            Our unique implementation of innovative solutions is cost-effective
+            compared to other operational approaches.
+          </p>
+        </div>
       </div>
 
       <!-- Card 3 -->
-      <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition">
-        <div class="mb-6 text-[#1ac0c6] text-3xl">
-          <font-awesome-icon icon="fa-solid fa-headphones" />
+      <div
+        class="bg-white rounded-xl shadow-sm hover:shadow-lg transition text-center flex flex-col items-center p-6 h-72"
+      >
+        <div class="mb-6 text-green-600 text-3xl">
+          <i class="fa-solid fa-headphones"></i>
         </div>
-        <h3 class="text-xl font-semibold mb-3">Live Support</h3>
-        <p class="text-gray-500 mb-4">
-          Instant help whenever you need: Connect with experts through Quidly's
-          Live Support for immediate assistance.
-        </p>
-        <a href="#" class="text-blue-600 font-medium hover:underline">
-          Read More
-        </a>
+        <div class="flex-1 flex flex-col justify-center">
+          <h3 class="text-xl font-semibold mb-3">Live Support</h3>
+          <p class="text-gray-500 mb-4">
+            Instant help whenever you need: Connect with experts through
+            Quidly's Live Support for immediate assistance.
+          </p>
+        </div>
       </div>
 
       <!-- Card 4 -->
-      <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition">
+      <div
+        class="bg-white rounded-xl shadow-sm hover:shadow-lg transition text-center flex flex-col items-center p-6 h-72"
+      >
         <div class="mb-6 text-green-600 text-3xl">
-          <font-awesome-icon icon="fa-solid fa-shield" />
+          <i class="fa-solid fa-shield"></i>
         </div>
-        <h3 class="text-xl font-semibold mb-3">Safe and Secure</h3>
-        <p class="text-gray-500 mb-4">
-          Your safety assured: Quidly delivers advanced security, ensuring
-          trustworthy and secure payment solutions.
-        </p>
-        <a href="#" class="text-blue-600 font-medium hover:underline">
-          Read More
-        </a>
+        <div class="flex-1 flex flex-col justify-center">
+          <h3 class="text-xl font-semibold mb-3">Safe and Secure</h3>
+          <p class="text-gray-500 mb-4">
+            Your safety assured: Quidly delivers advanced security, ensuring
+            trustworthy and secure payment solutions.
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -137,11 +141,11 @@ import Footer from "../components/Footer.vue";
 
   <section class="py-24">
     <div class="max-w-7xl mx-auto px-4">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
         <!-- Image Column -->
-        <div class="flex justify-center lg:justify-start">
+        <div class="flex justify-center lg:justify-center">
           <img
-            src="..//assets/img/hero-pic.png"
+            src="..//assets/img/about-us.png"
             alt="About Us Image"
             class="w-[400px] max-w-full"
           />
@@ -151,7 +155,7 @@ import Footer from "../components/Footer.vue";
         <div>
           <!-- Section Title -->
           <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">About Us</h2>
+            <h2 class="text-3xl md:text-4xl font-semibold mb-4">About Us</h2>
 
             <!-- Title Border -->
             <div class="flex items-center justify-center gap-2 mb-4">
@@ -162,7 +166,7 @@ import Footer from "../components/Footer.vue";
 
           <!-- Description -->
           <p
-            class="text-gray-600 leading-relaxed text-center lg:text-left mb-8"
+            class="text-gray-600 text-lg tracking-wide leading-relaxed text-center lg:text-left mb-8"
           >
             Quidly is aimed to provide disruptive technology solutions in the
             Nigeria payment space. With simple to integrate payment APIs, data
@@ -172,10 +176,10 @@ import Footer from "../components/Footer.vue";
           </p>
 
           <!-- Button -->
-          <div class="text-center lg:text-left">
+          <div class="text-center">
             <a
               href="/about"
-              class="inline-block bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition duration-300"
+              class="inline-block bg-lime-600 text-white px-6 py-3 rounded-full hover:bg-lime-700 shadow-lg shadow-lime-500/50 transition duration-300"
             >
               Learn More
             </a>
@@ -192,20 +196,13 @@ import Footer from "../components/Footer.vue";
       <!-- Section Header -->
       <div class="text-center flex justify-center">
         <div class="max-w-3xl mb-12">
-          <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
+          <h2 class="text-3xl md:text-4xl font-semibold mb-4">Our Services</h2>
 
           <!-- Title Border -->
           <div class="flex items-center justify-center gap-2 mb-6">
             <div class="w-12 h-1 bg-gray-800"></div>
             <div class="w-12 h-1 bg-gray-800"></div>
           </div>
-
-          <p class="text-gray-600 leading-relaxed">
-            Our Services encompass a comprehensive range of cutting-edge payment
-            solutions, including Virtual POS, QRCode, Payment Web Widget,
-            Payment Invoices, Salary (Bulk) Payments, and Mandate Payment,
-            designed to streamline your financial transactions.
-          </p>
         </div>
       </div>
 
@@ -216,7 +213,11 @@ import Footer from "../components/Footer.vue";
           class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300"
         >
           <a href="#">
-            <img src="" alt="Virtual POS" class="w-full h-56 object-cover" />
+            <img
+              src="..//assets/img/Our Services/virtual-pos.jpg   "
+              alt="Virtual POS"
+              class="w-full h-56 object-cover"
+            />
           </a>
           <div class="p-6">
             <h3 class="text-xl font-semibold mb-3">
@@ -235,7 +236,7 @@ import Footer from "../components/Footer.vue";
         >
           <a href="#">
             <img
-              src=""
+              src="..//assets/img/Our Services/payment-invoice.jpg"
               alt="Payment Invoice"
               class="w-full h-56 object-cover"
             />
@@ -259,7 +260,7 @@ import Footer from "../components/Footer.vue";
         >
           <a href="#">
             <img
-              src="..//assets/img/hero-pic.png"
+              src="..//assets/img/Our Services/payment-web-widget.png"
               alt="Payment Web Widget"
               class="w-full h-56 object-cover"
             />
@@ -282,7 +283,11 @@ import Footer from "../components/Footer.vue";
           class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300"
         >
           <a href="#">
-            <img src="" alt="QRCode" class="w-full h-56 object-cover" />
+            <img
+              src="..//assets/img/Our Services/QR-code.jpg"
+              alt="QRCode"
+              class="w-full h-56 object-cover"
+            />
           </a>
           <div class="p-6">
             <h3 class="text-xl font-semibold mb-3">
@@ -301,7 +306,7 @@ import Footer from "../components/Footer.vue";
         >
           <a href="#">
             <img
-              src="..//assets/img/hero-pic.png"
+              src="..//assets/img/Our Services/salary-payments.jpg"
               alt="Salary Bulk Payment"
               class="w-full h-56 object-cover"
             />
@@ -324,16 +329,14 @@ import Footer from "../components/Footer.vue";
         >
           <a href="#">
             <img
-              src="../assets/img/hero-pic.png"
+              src="..//assets/img/Our Services/credit-list.jpg"
               alt="Mandate Payment"
               class="w-full h-56 object-cover"
             />
           </a>
           <div class="p-6">
             <h3 class="text-xl font-semibold mb-3">
-              <a href="#" class="hover:text-blue-600 transition"
-                >Mandate Payment</a
-              >
+              <a href="#" class="hover:text-blue-600 transition">Credit List</a>
             </h3>
             <p class="text-gray-600 text-sm leading-relaxed">
               Your written instructions for deductions, e.g. installment
@@ -348,6 +351,16 @@ import Footer from "../components/Footer.vue";
   <!--Why choose us -->
 
   <section class="pb-24">
+    <!-- Section Title -->
+    <div class="text-center flex justify-center lg:text-left mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Why choose us</h2>
+
+      <!-- Title Border -->
+      <div class="flex items-center justify-center lg:justify-start gap-2 mb-6">
+        <div class="w-12 h-1 bg-gray-800"></div>
+        <div class="w-12 h-1 bg-gray-800"></div>
+      </div>
+    </div>
     <div class="max-w-7xl mx-auto px-4">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <!-- Image Column -->
@@ -361,19 +374,6 @@ import Footer from "../components/Footer.vue";
 
         <!-- Content Column -->
         <div>
-          <!-- Section Title -->
-          <div class="text-center lg:text-left mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">Why choose us</h2>
-
-            <!-- Title Border -->
-            <div
-              class="flex items-center justify-center lg:justify-start gap-2 mb-6"
-            >
-              <div class="w-12 h-1 bg-gray-800"></div>
-              <div class="w-12 h-1 bg-gray-800"></div>
-            </div>
-          </div>
-
           <!-- Description -->
           <p class="text-gray-600 leading-relaxed mb-8">
             Quidly innovates payment systems to provide better experiences for
@@ -383,11 +383,11 @@ import Footer from "../components/Footer.vue";
           </p>
 
           <!-- Features List -->
-          <ul class="space-y-6">
+          <ul class="grid grid-cols-2 gap-6">
             <!-- Item -->
             <li class="flex items-start gap-4">
               <div
-                class="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-blue-600 text-white"
+                class="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-green-600 text-white"
               >
                 ✓
               </div>
@@ -402,7 +402,7 @@ import Footer from "../components/Footer.vue";
             <!-- Item -->
             <li class="flex items-start gap-4">
               <div
-                class="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-blue-600 text-white"
+                class="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-green-600 text-white"
               >
                 ✓
               </div>
@@ -415,7 +415,7 @@ import Footer from "../components/Footer.vue";
             <!-- Item -->
             <li class="flex items-start gap-4">
               <div
-                class="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-blue-600 text-white"
+                class="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-green-600 text-white"
               >
                 ✓
               </div>
@@ -430,7 +430,7 @@ import Footer from "../components/Footer.vue";
             <!-- Item -->
             <li class="flex items-start gap-4">
               <div
-                class="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-blue-600 text-white"
+                class="shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-green-600 text-white"
               >
                 ✓
               </div>
@@ -438,24 +438,6 @@ import Footer from "../components/Footer.vue";
                 <h3 class="text-lg font-semibold mb-1">Reliable</h3>
                 <p class="text-gray-600 text-sm">
                   Consistently trustworthy and dependable.
-                </p>
-              </div>
-            </li>
-
-            <!-- Item -->
-            <li class="flex items-start gap-4">
-              <div
-                class="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-blue-600 text-white"
-              >
-                ✓
-              </div>
-              <div>
-                <h3 class="text-lg font-semibold mb-1">
-                  Improved Customer Experience
-                </h3>
-                <p class="text-gray-600 text-sm">
-                  Enhancing interactions and satisfaction levels, resulting in a
-                  more positive and enjoyable overall experience.
                 </p>
               </div>
             </li>
@@ -469,4 +451,3 @@ import Footer from "../components/Footer.vue";
 
   <Footer />
 </template>
-        

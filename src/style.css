@@ -1,1 +1,31 @@
 @import "tailwindcss";
+
+@keyframes stretchleft {
+  0%, 100% {
+    left: 0;
+    width: 6rem; /* starting width */
+  }
+  50% {
+    left: 0;
+    width: 18rem; /* full stretch to right end */
+  }
+}
+
+@keyframes stretchright {
+  0%, 100% {
+    right: 0;
+    width: 6rem;
+  }
+  50% {
+    right: 0;
+    width: 18rem;
+  }
+}
+
+.animate-stretch-left {
+  animation: stretchleft 1.5s ease-in-out infinite;
+}
+
+.animate-stretch-right {
+  animation: stretchright 1.5s ease-in-out infinite 0.75s; /* delayed to alternate */
+}

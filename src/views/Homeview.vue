@@ -190,18 +190,21 @@ import Footer from "../components/Footer.vue";
       </div>
     </section>
 
-    <!--Services -->
-    <div class=" bottom-0 left-0 w-full  bg-gradient-to-r from-white to-green-500 rounded-t-[120px]">
+    <!--Services & Why choose us-->
+    <div
+      class="bottom-0 left-0 w-full bg-gradient-to-r from-white to-green-100"
+    >
+      <!-- commented previous our services section
       <section class="py-20">
         <div class="max-w-7xl mx-auto px-4">
-          <!-- Section Header -->
+          
           <div class="text-center flex justify-center">
             <div class="max-w-3xl mb-12">
               <h2 class="text-3xl md:text-4xl font-semibold mb-4">
                 Our Services
               </h2>
 
-              <!-- Title Border -->
+              
               <div class="flex items-center justify-center gap-2 mb-6">
                 <div class="w-12 h-1 bg-gray-800"></div>
                 <div class="w-12 h-1 bg-gray-800"></div>
@@ -209,9 +212,9 @@ import Footer from "../components/Footer.vue";
             </div>
           </div>
 
-          <!-- Services Grid -->
+          
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Service Item -->
+            
             <div
               class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300"
             >
@@ -235,7 +238,7 @@ import Footer from "../components/Footer.vue";
               </div>
             </div>
 
-            <!-- Service Item -->
+            
             <div
               class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300"
             >
@@ -259,7 +262,7 @@ import Footer from "../components/Footer.vue";
               </div>
             </div>
 
-            <!-- Service Item -->
+            
             <div
               class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300"
             >
@@ -283,7 +286,7 @@ import Footer from "../components/Footer.vue";
               </div>
             </div>
 
-            <!-- Service Item -->
+            
             <div
               class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300"
             >
@@ -305,7 +308,7 @@ import Footer from "../components/Footer.vue";
               </div>
             </div>
 
-            <!-- Service Item -->
+            
             <div
               class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300"
             >
@@ -328,7 +331,7 @@ import Footer from "../components/Footer.vue";
               </div>
             </div>
 
-            <!-- Service Item -->
+            
             <div
               class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300"
             >
@@ -354,6 +357,107 @@ import Footer from "../components/Footer.vue";
           </div>
         </div>
       </section>
+    -->
+
+      <div class="max-w-7xl mx-auto px-4 py-20">
+        <div class="mb-24">
+          <h2 class="font-bold text-5xl text-black/90 mb-4">
+            Simple, Easy Payments
+          </h2>
+          <p class="font-semibold text-lg">
+            Building a business is hard. Getting paid shouldn't be.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+          <div class="flex justify-center lg:justify-center">
+            <img
+              src="..//assets/img/Our Services/newimage4slide.jpeg"
+              alt=""
+              class="w-[636px] h-[704px]"
+            />
+          </div>
+
+          <div class="">
+            <h2 class="font-bold text-4xl text-black/90 mb-4">
+              Delight customers with a seamless payments experience
+            </h2>
+            <p class="font-semibold text-lg mb-4">
+              Make payments effortless for your customers with a smooth and
+              reliable checkout powered by Paystack.
+            </p>
+
+            <ul
+              class="grid grid-cols-2 gap-4 text-xl mb-10 font-medium text-gray-700"
+            >
+              <li class="flex items-center gap-2 px-4 py-2">
+                <span class="text-green-600 font-bold"
+                  ><i class="fa-solid fa-check"></i
+                ></span>
+                Card
+              </li>
+
+              <li class="flex items-center gap-2 px-4 py-2">
+                <span class="text-green-600 font-bold"
+                  ><i class="fa-solid fa-check"></i
+                ></span>
+                Apple Pay
+              </li>
+
+              <li class="flex items-center gap-2 px-4 py-2">
+                <span class="text-green-600 font-bold"
+                  ><i class="fa-solid fa-check"></i
+                ></span>
+                Bank Account
+              </li>
+
+              <li class="flex items-center gap px-4 py-2">
+                <span class="text-green-600 font-bold"
+                  ><i class="fa-solid fa-check"></i
+                ></span>
+                Visa QR
+              </li>
+
+              <li class="flex items-center gap-2 px-4 py-2">
+                <span class="text-green-600 font-bold"
+                  ><i class="fa-solid fa-check"></i
+                ></span>
+                Bank Transfer
+              </li>
+
+              <li class="flex items-center gap-2 px-4 py-2">
+                <span class="text-green-600 font-bold"
+                  ><i class="fa-solid fa-check"></i
+                ></span>
+                Mobile Money
+              </li>
+
+              <li class="flex items-center gap-2 px-4 py-2">
+                <span class="text-green-600 font-bold"
+                  ><i class="fa-solid fa-check"></i
+                ></span>
+                USSD
+              </li>
+
+              <li class="flex items-center gap-2 px-4 py-2">
+                <span class="text-green-600 font-bold"
+                  ><i class="fa-solid fa-check"></i
+                ></span>
+                POS
+              </li>
+            </ul>
+
+            <div>
+              <h2 class="font-bold text-4xl text-black/90 mb-4">Experience exceptional transaction success rates.</h2>
+              <p class="font-semibold text-lg">
+                Here’s a polished alternative with the same meaning: We
+                intelligently direct payments through the best channels to
+                guarantee industry-leading transaction success rates.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!--Why choose us -->
 
@@ -363,14 +467,21 @@ import Footer from "../components/Footer.vue";
         <div class="max-w-7xl mx-auto px-4">
           <div class="text-center flex justify-center">
             <div class="max-w-3xl mb-12">
-              <h2 class="text-3xl md:text-4xl font-semibold mb-4">
+              <h2 class="text-3xl md:text-4xl font-semibold mb-3">
                 Why Choose Us
               </h2>
 
               <!-- Title Border -->
-              <div class="flex items-center justify-center gap-2 mb-6">
-                <div class="w-12 h-1 bg-gray-800"></div>
-                <div class="w-12 h-1 bg-gray-800"></div>
+              <div class="relative w-72 h-2 mx-auto overflow-hidden">
+                <!-- Left line stretches -->
+                <div
+                  class="absolute top-1/2 -translate-y-1/2 h-1 bg-gray-800 shadow-lg animate-stretch-left"
+                ></div>
+
+                <!-- Right line stretches -->
+                <div
+                  class="absolute top-1/2 -translate-y-1/2 h-1 bg-gray-800 shadow-lg animate-stretch-right"
+                ></div>
               </div>
             </div>
           </div>
@@ -387,7 +498,7 @@ import Footer from "../components/Footer.vue";
             <!-- Content Column -->
             <div class="">
               <!--Container block-->
-              <div class="bg-green-200 flex rounded-md px-6 py-2 mb-2 gap-4">
+              <div class="bg-white flex rounded-md px-6 py-6 mb-2 gap-4">
                 <div class="text-3xl border rounded-full my-auto">
                   <i class="fa-solid fa-shield"></i>
                 </div>
@@ -401,7 +512,7 @@ import Footer from "../components/Footer.vue";
                   </p>
                 </div>
               </div>
-              <div class="bg-gray-500 flex rounded-md px-6 py-2 mb-2 gap-4">
+              <div class="bg-white flex rounded-md px-6 py-6 mb-2 gap-4">
                 <div class="text-3xl my-auto">
                   <i class="fa-solid fa-shield"></i>
                 </div>
@@ -415,7 +526,7 @@ import Footer from "../components/Footer.vue";
                   </p>
                 </div>
               </div>
-              <div class="bg-gray-500 flex rounded-md px-6 py-2 mb-2 gap-4">
+              <div class="bg-white flex rounded-md px-6 py-6 mb-2 gap-4">
                 <div class="text-3xl my-auto">
                   <i class="fa-solid fa-shield"></i>
                 </div>
@@ -429,7 +540,7 @@ import Footer from "../components/Footer.vue";
                   </p>
                 </div>
               </div>
-              <div class="bg-gray-500 flex rounded-md px-6 py-2 gap-4">
+              <div class="bg-white flex rounded-md px-6 py-6 gap-4">
                 <div class="text-3xl my-auto">
                   <i class="fa-solid fa-shield"></i>
                 </div>
@@ -451,7 +562,7 @@ import Footer from "../components/Footer.vue";
     <!--Our Pricing-->
 
     <section>
-      <div class="max-w-4xl mx-auto px-4">
+      <div class="max-w-4xl mx-auto py-10 px-4">
         <div class="flex items-center justify-center my-12">
           <h2 class="text-6xl text-bold font-bold text-center">
             Competitive Price. Best Value.

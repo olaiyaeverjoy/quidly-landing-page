@@ -44,7 +44,7 @@ import Footer from "../components/Footer.vue";
           <h1
             class="text-5xl text-[#1f7de7] sm:text-6xl md:text-7xl lg:text-6xl xl:text-7xl font-semibold mb-4"
           >
-            A Better Way To <br />
+            A Simpler Way To <br />
             Collect Payments
           </h1>
 
@@ -76,12 +76,14 @@ import Footer from "../components/Footer.vue";
         <div
           class="bg-white rounded-xl shadow-sm hover:shadow-lg transition text-center flex flex-col justify-center p-6 h-72"
         >
-          <div class="mb-6 text-green-600 text-3xl">
-            <i class="fa-solid fa-briefcase"></i>
+          <div
+            class="mx-auto mb-6 w-14 h-14 flex bg-green-100 rounded-xl items-center justify-center text-3xl"
+          >
+            <i class="fa-solid fa-briefcase text-green-600"></i>
           </div>
           <div class="flex-1 flex flex-col justify-center">
             <h3 class="text-xl font-semibold mb-3">Professional Services</h3>
-            <p class="text-gray-500 mb-4">
+            <p class="text-gray-500 text-sm mb-4">
               Explore Quidly's seamless payment solutions under our dedicated
               Professional Services.
             </p>
@@ -97,7 +99,7 @@ import Footer from "../components/Footer.vue";
           </div>
           <div class="flex-1 flex flex-col justify-center">
             <h3 class="text-xl font-semibold mb-3">Low Costing</h3>
-            <p class="text-gray-500 mb-4">
+            <p class="text-gray-500 text-sm mb-4">
               Our unique implementation of innovative solutions is
               cost-effective compared to other operational approaches.
             </p>
@@ -113,7 +115,7 @@ import Footer from "../components/Footer.vue";
           </div>
           <div class="flex-1 flex flex-col justify-center">
             <h3 class="text-xl font-semibold mb-3">Live Support</h3>
-            <p class="text-gray-500 mb-4">
+            <p class="text-gray-500 text-sm mb-4">
               Instant help whenever you need: Connect with experts through
               Quidly's Live Support for immediate assistance.
             </p>
@@ -129,7 +131,7 @@ import Footer from "../components/Footer.vue";
           </div>
           <div class="flex-1 flex flex-col justify-center">
             <h3 class="text-xl font-semibold mb-3">Safe and Secure</h3>
-            <p class="text-gray-500 mb-4">
+            <p class="text-gray-500 text-sm mb-4">
               Your safety assured: Quidly delivers advanced security, ensuring
               trustworthy and secure payment solutions.
             </p>
@@ -156,7 +158,7 @@ import Footer from "../components/Footer.vue";
           <div>
             <!-- Section Title -->
             <div class="text-center mb-12">
-              <h2 class="text-3xl md:text-4xl font-semibold mb-4">About Us</h2>
+              <h2 class="text-4xl text-black/90 font-bold mb-4">About Us</h2>
 
               <!-- Title Border -->
               <div class="flex items-center justify-center gap-2 mb-4">
@@ -167,7 +169,7 @@ import Footer from "../components/Footer.vue";
 
             <!-- Description -->
             <p
-              class="text-gray-600 text-lg tracking-wide leading-relaxed text-center lg:text-left mb-8"
+              class="text-base font-semibold tracking-wide leading-relaxed text-center lg:text-left mb-8"
             >
               Quidly is aimed to provide disruptive technology solutions in the
               Nigeria payment space. With simple to integrate payment APIs, data
@@ -192,7 +194,7 @@ import Footer from "../components/Footer.vue";
 
     <!--Services & Why choose us-->
     <div
-      class="bottom-0 left-0 w-full bg-gradient-to-r from-white to-green-100"
+      class="bottom-0 left-0 w-full bg-gradient-to-r from-slate-50 to-green-50"
     >
       <!-- commented previous our services section
       <section class="py-20">
@@ -361,10 +363,10 @@ import Footer from "../components/Footer.vue";
 
       <div class="max-w-7xl mx-auto px-4 py-20">
         <div class="mb-24">
-          <h2 class="font-bold text-5xl text-black/90 mb-4">
+          <h2 class="font-bold text-4xl text-black/90 mb-4">
             Simple, Easy Payments
           </h2>
-          <p class="font-semibold text-lg">
+          <p class="font-semibold text-base">
             Building a business is hard. Getting paid shouldn't be.
           </p>
         </div>
@@ -379,16 +381,16 @@ import Footer from "../components/Footer.vue";
           </div>
 
           <div class="">
-            <h2 class="font-bold text-4xl text-black/90 mb-4">
+            <h2 class="font-bold text-3xl text-black/90 mb-4">
               Delight customers with a seamless payments experience
             </h2>
-            <p class="font-semibold text-lg mb-4">
+            <p class="font-semibold text-base mb-4">
               Make payments effortless for your customers with a smooth and
               reliable checkout powered by Paystack.
             </p>
 
             <ul
-              class="grid grid-cols-2 gap-4 text-xl mb-10 font-medium text-gray-700"
+              class="grid grid-cols-2 gap-4 text-lg mb-10 font-medium text-gray-700"
             >
               <li class="flex items-center gap-2 px-4 py-2">
                 <span class="text-green-600 font-bold"
@@ -448,8 +450,10 @@ import Footer from "../components/Footer.vue";
             </ul>
 
             <div>
-              <h2 class="font-bold text-4xl text-black/90 mb-4">Experience exceptional transaction success rates.</h2>
-              <p class="font-semibold text-lg">
+              <h2 class="font-bold text-3xl text-black/90 mb-4">
+                Experience exceptional transaction success rates.
+              </h2>
+              <p class="font-semibold text-base">
                 Here’s a polished alternative with the same meaning: We
                 intelligently direct payments through the best channels to
                 guarantee industry-leading transaction success rates.
@@ -459,6 +463,68 @@ import Footer from "../components/Footer.vue";
         </div>
       </div>
 
+      <!--Code from claude-->
+
+      <section class="min-h-screen flex items-center px-16">
+        <div
+          class="max-w-6xl mx-auto w-full flex flex-col md:flex-row items-center gap-12"
+        >
+          <!-- Left: Heading -->
+          <div class="md:w-1/3 flex-shrink-0">
+            <span class="block w-8 h-0.5 bg-slate-400 mb-4"></span>
+            <h2 class="text-3xl font-bold text-slate-800 leading-snug">
+              How can your <br />
+              customer pay?
+            </h2>
+          </div>
+
+          <!-- Right: Cards -->
+          <div class="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <!-- Card 1 - USSD / Mobile -->
+            <div
+              class="card-flip-in bg-white rounded-2xl shadow-sm p-8 flex flex-col gap-4"
+              style="animation-delay: 0.1s"
+            >
+              <div
+                class="w-14 h-14 bg-cyan-50 rounded-xl flex items-center justify-center"
+              >
+                <i
+                  class="fa-solid fa-mobile-screen-button text-2xl text-cyan-600"
+                ></i>
+              </div>
+              <div>
+                <h3 class="text-base font-bold text-slate-800 mb-2">
+                  USSD, Mobile and Internet Transfers
+                </h3>
+                <p class="text-sm text-slate-500 leading-relaxed">
+                  Using Monnify, your customers can make payment to you on your
+                  website or app by initiating a simple interbank transfer using
+                  USSD, internet banking or their mobile banking app.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 2 - Cards -->
+            <div class="bg-white rounded-2xl shadow-sm p-8 flex flex-col gap-4">
+              <div
+                class="w-14 h-14 bg-cyan-50 rounded-xl flex items-center justify-center"
+              >
+                <i class="fa-solid fa-credit-card text-2xl text-cyan-600"></i>
+              </div>
+              <div>
+                <h3 class="text-base font-bold text-slate-800 mb-2">Cards</h3>
+                <p class="text-sm text-slate-500 leading-relaxed">
+                  Monnify allows you receive payments via debit cards online,
+                  while offering the most competitive transaction fees
+                  obtainable. Cards can also be tokenized for convenient
+                  recurring billing on cards.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!--Why choose us -->
 
       <section class="pb-24">
@@ -467,22 +533,22 @@ import Footer from "../components/Footer.vue";
         <div class="max-w-7xl mx-auto px-4">
           <div class="text-center flex justify-center">
             <div class="max-w-3xl mb-12">
-              <h2 class="text-3xl md:text-4xl font-semibold mb-3">
+              <!-- <h2 class="text-3xl md:text-4xl font-semibold mb-3">
                 Why Choose Us
-              </h2>
+              </h2> -->
 
               <!-- Title Border -->
-              <div class="relative w-72 h-2 mx-auto overflow-hidden">
-                <!-- Left line stretches -->
+              <!-- <div class="relative w-72 h-2 mx-auto overflow-hidden">
+                Left line stretches
                 <div
                   class="absolute top-1/2 -translate-y-1/2 h-1 bg-gray-800 shadow-lg animate-stretch-left"
                 ></div>
 
-                <!-- Right line stretches -->
+                Right line stretches
                 <div
                   class="absolute top-1/2 -translate-y-1/2 h-1 bg-gray-800 shadow-lg animate-stretch-right"
                 ></div>
-              </div>
+              </div> -->
             </div>
           </div>
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -499,58 +565,57 @@ import Footer from "../components/Footer.vue";
             <div class="">
               <!--Container block-->
               <div class="bg-white flex rounded-md px-6 py-6 mb-2 gap-4">
-                <div class="text-3xl border rounded-full my-auto">
-                  <i class="fa-solid fa-shield"></i>
+                <div class="text-3xl my-auto">
+                  <i class="fa-solid fa-money-bill-wave"></i>
                 </div>
                 <div>
-                  <h2 class="mb-2">More Collections</h2>
+                  <h2 class="mb-2">Effortless Collections</h2>
                   <p class="text-sm text-gray-600">
-                    Now you can leverage our new methods of payments to increase
-                    your collections and at scale. The interbank transfers
-                    payment option opens up a new market for you and activates
-                    dormant customers.
+                    You can now take advantage of our new payment methods to
+                    grow your collections and scale your business more
+                    efficiently. With interbank transfer options, you can reach
+                    a wider audience and re-engage customers who were previously
+                    inactive.
                   </p>
                 </div>
               </div>
               <div class="bg-white flex rounded-md px-6 py-6 mb-2 gap-4">
                 <div class="text-3xl my-auto">
-                  <i class="fa-solid fa-shield"></i>
+                  <i class="fa-solid fa-circle-check"></i>
                 </div>
                 <div>
-                  <h2 class="mb-2">More Collections</h2>
+                  <h2 class="mb-2">Improved Transaction Success</h2>
                   <p class="text-sm">
-                    Now you can leverage our new methods of payments to increase
-                    your collections and at scale. The interbank transfers
-                    payment option opens up a new market for you and activates
-                    dormant customers.
+                    Quidly offers multiple payment channels and intelligent
+                    routing that help maximize transaction success. Its
+                    interbank transfer system is optimized to deliver reliable
+                    processing and consistently high completion rates.
                   </p>
                 </div>
               </div>
               <div class="bg-white flex rounded-md px-6 py-6 mb-2 gap-4">
                 <div class="text-3xl my-auto">
-                  <i class="fa-solid fa-shield"></i>
+                  <i class="fa-solid fa-gears"></i>
                 </div>
                 <div>
-                  <h2 class="mb-2">More Collections</h2>
+                  <h2 class="mb-2">Seamless Operations</h2>
                   <p class="text-sm">
-                    Now you can leverage our new methods of payments to increase
-                    your collections and at scale. The interbank transfers
-                    payment option opens up a new market for you and activates
-                    dormant customers.
+                    Run your business more efficiently with Quidly, which helps
+                    eliminate operational challenges like transaction delays,
+                    slow settlements, complex reconciliation, high processing
+                    fees, and the risks associated with handling cash.
                   </p>
                 </div>
               </div>
               <div class="bg-white flex rounded-md px-6 py-6 gap-4">
                 <div class="text-3xl my-auto">
-                  <i class="fa-solid fa-shield"></i>
+                  <i class="fa-solid fa-credit-card"></i>
                 </div>
                 <div>
-                  <h2 class="mb-2">More Collections</h2>
+                  <h2 class="mb-2">Credit List</h2>
                   <p class="text-sm">
-                    Now you can leverage our new methods of payments to increase
-                    your collections and at scale. The interbank transfers
-                    payment option opens up a new market for you and activates
-                    dormant customers.
+                    Integrated credit management system designed to assist
+                    merchants in managing credit offers to their customers.
                   </p>
                 </div>
               </div>
@@ -564,7 +629,7 @@ import Footer from "../components/Footer.vue";
     <section>
       <div class="max-w-4xl mx-auto py-10 px-4">
         <div class="flex items-center justify-center my-12">
-          <h2 class="text-6xl text-bold font-bold text-center">
+          <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center">
             Competitive Price. Best Value.
           </h2>
         </div>
@@ -615,8 +680,101 @@ import Footer from "../components/Footer.vue";
       </div>
     </section>
 
-    <!--Blog-->
+    <!--Get started section-->
 
+    <section
+      class="min-h-screen  flex items-center px-16 py-20"
+    >
+      <div
+        class="max-w-6xl mx-auto w-full flex flex-col md:flex-row items-center gap-16"
+      >
+        <!-- Left: Heading -->
+        <div class="md:w-1/3 flex-shrink-0">
+          <span class="block w-8 h-0.5 bg-slate-400 mb-4"></span>
+          <h2 class="text-5xl font-bold text-slate-800 leading-tight mb-4">
+            Get <br />
+            Started
+          </h2>
+          <p class="text-slate-500 text-sm leading-relaxed">
+            Enjoy Easier, Faster, Cheaper <br />
+            Payments Today
+          </p>
+        </div>
+
+        <!-- Right: Form Card -->
+        <div
+          class="md:w-2/3 relative w-full rounded-2xl overflow-hidden"
+          style="background-color: #0d3d4f"
+        >
+          <!-- Orange blob top-right -->
+          <div
+            class="absolute -top-6 -right-6 w-40 h-40 rounded-full"
+            style="
+              background-color: #f5a623;
+              border-radius: 60% 40% 70% 30% / 50% 60% 40% 50%;
+            "
+          ></div>
+
+          <!-- Dot pattern bottom-left -->
+          <div
+            class="absolute bottom-0 left-0 w-48 h-48 opacity-20"
+            style="
+              background-image: radial-gradient(
+                circle,
+                #ffffff 1px,
+                transparent 1px
+              );
+              background-size: 12px 12px;
+            "
+          ></div>
+
+          <!-- Form Content -->
+          <div class="relative z-10 p-12">
+            <h3 class="text-white text-2xl font-light mb-8">
+              Get started here
+            </h3>
+
+            <div class="flex flex-col gap-4">
+              <!-- Business Name -->
+              <input
+                
+                type="text"
+                placeholder="Business Name"
+                class="w-full px-5 py-4 rounded-xl text-slate-300 placeholder-slate-400 outline-none border-none"
+                style="background-color: #0f4d63"
+              />
+
+              <!-- Email -->
+              <input
+                
+                type="email"
+                placeholder="Your Email"
+                class="w-full px-5 py-4 rounded-xl text-slate-300 placeholder-slate-400 outline-none border-none"
+                style="background-color: #0f4d63"
+              />
+
+              <!-- Password -->
+              <input
+                
+                type="password"
+                placeholder="Password"
+                class="w-full px-5 py-4 rounded-xl text-slate-300 placeholder-slate-400 outline-none border-none"
+                style="background-color: #0f4d63"
+              />
+
+              <!-- Sign Up Button -->
+              <button
+                class="w-full py-4 rounded-xl font-semibold text-slate-800 mt-2 hover:opacity-90 transition-opacity"
+                style="background-color: #f0ede8"
+                @click="handleSignup"
+              >
+                Sign up
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <Footer />
   </div>
 </template>

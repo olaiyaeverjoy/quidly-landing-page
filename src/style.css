@@ -29,3 +29,18 @@
 .animate-stretch-right {
   animation: stretchright 1.5s ease-in-out infinite 0.75s; /* delayed to alternate */
 }
+
+@keyframes flipIn {
+  0% {
+    transform: rotateY(180deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+.card-flip-in {
+  animation: flipIn 0.6s ease-out both;
+}

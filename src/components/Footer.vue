@@ -66,9 +66,9 @@
           <div>
             <h3 class="text-xl font-semibold mb-4">Community</h3>
             <div class="flex gap-7 mb-6">
-              <i class="fa-brands fa-facebook text-lime-500 text-3xl"></i>
-              <i class="fa-brands fa-linkedin text-lime-500 text-3xl"></i>
-              <i class="fa-brands fa-instagram text-lime-500 text-3xl"></i>
+              <i class="fa-brands fa-facebook text-green-600 text-3xl"></i>
+              <i class="fa-brands fa-linkedin text-green-600 text-3xl"></i>
+              <i class="fa-brands fa-instagram text-green-600 text-3xl"></i>
             </div>
             <p class="mb-6">Stay Excited, Subscribe to our
               Newsletter</p>

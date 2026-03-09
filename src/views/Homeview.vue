@@ -94,8 +94,10 @@ import Footer from "../components/Footer.vue";
         <div
           class="bg-white rounded-xl shadow-sm hover:shadow-lg transition text-center flex flex-col items-center p-6 h-72"
         >
-          <div class="mb-6 text-green-600 text-3xl">
-            <i class="fa-solid fa-wallet"></i>
+          <div
+            class="mx-auto mb-6 w-14 h-14 flex bg-green-100 rounded-xl items-center justify-center text-3xl"
+          >
+            <i class="fa-solid fa-wallet text-green-600"></i>
           </div>
           <div class="flex-1 flex flex-col justify-center">
             <h3 class="text-xl font-semibold mb-3">Low Costing</h3>
@@ -110,8 +112,10 @@ import Footer from "../components/Footer.vue";
         <div
           class="bg-white rounded-xl shadow-sm hover:shadow-lg transition text-center flex flex-col items-center p-6 h-72"
         >
-          <div class="mb-6 text-green-600 text-3xl">
-            <i class="fa-solid fa-headphones"></i>
+          <div
+            class="mx-auto mb-6 w-14 h-14 flex bg-green-100 rounded-xl items-center justify-center text-3xl"
+          >
+            <i class="fa-solid fa-headphones text-green-600"></i>
           </div>
           <div class="flex-1 flex flex-col justify-center">
             <h3 class="text-xl font-semibold mb-3">Live Support</h3>
@@ -126,8 +130,10 @@ import Footer from "../components/Footer.vue";
         <div
           class="bg-white rounded-xl shadow-sm hover:shadow-lg transition text-center flex flex-col items-center p-6 h-72"
         >
-          <div class="mb-6 text-green-600 text-3xl">
-            <i class="fa-solid fa-shield"></i>
+          <div
+            class="mx-auto mb-6 w-14 h-14 flex bg-green-100 rounded-xl items-center justify-center text-3xl"
+          >
+            <i class="fa-solid fa-shield text-green-600"></i>
           </div>
           <div class="flex-1 flex flex-col justify-center">
             <h3 class="text-xl font-semibold mb-3">Safe and Secure</h3>
@@ -169,7 +175,7 @@ import Footer from "../components/Footer.vue";
 
             <!-- Description -->
             <p
-              class="text-base font-semibold tracking-wide leading-relaxed text-center lg:text-left mb-8"
+              class="text-base font-semibold text-gray-600 tracking-wide leading-relaxed text-center lg:text-left mb-8"
             >
               Quidly is aimed to provide disruptive technology solutions in the
               Nigeria payment space. With simple to integrate payment APIs, data
@@ -194,7 +200,7 @@ import Footer from "../components/Footer.vue";
 
     <!--Services & Why choose us-->
     <div
-      class="bottom-0 left-0 w-full bg-gradient-to-r from-slate-50 to-green-50"
+      class="bottom-0 left-0 w-full bg-gradient-to-r from-slate-100 to-green-100"
     >
       <!-- commented previous our services section
       <section class="py-20">
@@ -363,10 +369,10 @@ import Footer from "../components/Footer.vue";
 
       <div class="max-w-7xl mx-auto px-4 py-20">
         <div class="mb-24">
-          <h2 class="font-bold text-4xl text-black/90 mb-4">
+          <h2 class="font-bold text-4xl text-slate-800 mb-4">
             Simple, Easy Payments
           </h2>
-          <p class="font-semibold text-base">
+          <p class="font-semibold text-gray-600 text-base">
             Building a business is hard. Getting paid shouldn't be.
           </p>
         </div>
@@ -381,10 +387,10 @@ import Footer from "../components/Footer.vue";
           </div>
 
           <div class="">
-            <h2 class="font-bold text-3xl text-black/90 mb-4">
+            <h2 class="font-bold text-3xl text-slate-800 mb-4">
               Delight customers with a seamless payments experience
             </h2>
-            <p class="font-semibold text-base mb-4">
+            <p class="font-semibold text-gray-600 text-base mb-4">
               Make payments effortless for your customers with a smooth and
               reliable checkout powered by Paystack.
             </p>
@@ -450,7 +456,7 @@ import Footer from "../components/Footer.vue";
             </ul>
 
             <div>
-              <h2 class="font-bold text-3xl text-black/90 mb-4">
+              <h2 class="font-bold text-3xl text-slate-800 mb-4">
                 Experience exceptional transaction success rates.
               </h2>
               <p class="font-semibold text-base">
@@ -465,7 +471,7 @@ import Footer from "../components/Footer.vue";
 
       <!--Code from claude-->
 
-      <section class="min-h-screen flex items-center px-16">
+      <section class="flex items-center py-20 px-16">
         <div
           class="max-w-6xl mx-auto w-full flex flex-col md:flex-row items-center gap-12"
         >
@@ -486,10 +492,10 @@ import Footer from "../components/Footer.vue";
               style="animation-delay: 0.1s"
             >
               <div
-                class="w-14 h-14 bg-cyan-50 rounded-xl flex items-center justify-center"
+                class="w-14 h-14 bg-green-100 rounded-xl flex items-center justify-center"
               >
                 <i
-                  class="fa-solid fa-mobile-screen-button text-2xl text-cyan-600"
+                  class="fa-solid fa-mobile-screen-button text-2xl text-green-600"
                 ></i>
               </div>
               <div>
@@ -507,9 +513,9 @@ import Footer from "../components/Footer.vue";
             <!-- Card 2 - Cards -->
             <div class="bg-white rounded-2xl shadow-sm p-8 flex flex-col gap-4">
               <div
-                class="w-14 h-14 bg-cyan-50 rounded-xl flex items-center justify-center"
+                class="w-14 h-14 bg-green-100 rounded-xl flex items-center justify-center"
               >
-                <i class="fa-solid fa-credit-card text-2xl text-cyan-600"></i>
+                <i class="fa-solid fa-credit-card text-2xl text-green-600"></i>
               </div>
               <div>
                 <h3 class="text-base font-bold text-slate-800 mb-2">Cards</h3>
@@ -554,7 +560,9 @@ import Footer from "../components/Footer.vue";
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <!-- Image/Text Column -->
             <div class="justify-center lg:justify-start">
-              <h2 class="text-7xl text-bold mb-4">Faster Growth</h2>
+              <h2 class="text-7xl text-bold text-slate-800 mb-4">
+                Faster Growth
+              </h2>
               <p class="text-gray-600 text-4xl">
                 Trusted Partners <br />
                 Reliable
@@ -564,9 +572,9 @@ import Footer from "../components/Footer.vue";
             <!-- Content Column -->
             <div class="">
               <!--Container block-->
-              <div class="bg-white flex rounded-md px-6 py-6 mb-2 gap-4">
+              <div class="bg-slate-200 flex rounded-md px-6 py-6 mb-2 gap-4">
                 <div class="text-3xl my-auto">
-                  <i class="fa-solid fa-money-bill-wave"></i>
+                  <i class="fa-solid fa-money-bill-wave text-green-600"></i>
                 </div>
                 <div>
                   <h2 class="mb-2">Effortless Collections</h2>
@@ -579,13 +587,13 @@ import Footer from "../components/Footer.vue";
                   </p>
                 </div>
               </div>
-              <div class="bg-white flex rounded-md px-6 py-6 mb-2 gap-4">
+              <div class="bg-slate-200 flex rounded-md px-6 py-6 mb-2 gap-4">
                 <div class="text-3xl my-auto">
-                  <i class="fa-solid fa-circle-check"></i>
+                  <i class="fa-solid fa-circle-check text-green-600"></i>
                 </div>
                 <div>
                   <h2 class="mb-2">Improved Transaction Success</h2>
-                  <p class="text-sm">
+                  <p class="text-sm text-gray-600">
                     Quidly offers multiple payment channels and intelligent
                     routing that help maximize transaction success. Its
                     interbank transfer system is optimized to deliver reliable
@@ -593,13 +601,13 @@ import Footer from "../components/Footer.vue";
                   </p>
                 </div>
               </div>
-              <div class="bg-white flex rounded-md px-6 py-6 mb-2 gap-4">
+              <div class="bg-slate-200 flex rounded-md px-6 py-6 mb-2 gap-4">
                 <div class="text-3xl my-auto">
-                  <i class="fa-solid fa-gears"></i>
+                  <i class="fa-solid fa-gears text-green-600"></i>
                 </div>
                 <div>
                   <h2 class="mb-2">Seamless Operations</h2>
-                  <p class="text-sm">
+                  <p class="text-sm text-gray-600">
                     Run your business more efficiently with Quidly, which helps
                     eliminate operational challenges like transaction delays,
                     slow settlements, complex reconciliation, high processing
@@ -607,13 +615,13 @@ import Footer from "../components/Footer.vue";
                   </p>
                 </div>
               </div>
-              <div class="bg-white flex rounded-md px-6 py-6 gap-4">
+              <div class="bg-slate-200 flex rounded-md px-6 py-6 gap-4">
                 <div class="text-3xl my-auto">
-                  <i class="fa-solid fa-credit-card"></i>
+                  <i class="fa-solid fa-credit-card text-green-600"></i>
                 </div>
                 <div>
                   <h2 class="mb-2">Credit List</h2>
-                  <p class="text-sm">
+                  <p class="text-sm text-gray-600">
                     Integrated credit management system designed to assist
                     merchants in managing credit offers to their customers.
                   </p>
@@ -624,12 +632,15 @@ import Footer from "../components/Footer.vue";
         </div>
       </section>
     </div>
+
     <!--Our Pricing-->
 
     <section>
-      <div class="max-w-4xl mx-auto py-10 px-4">
+      <div class="max-w-4xl mx-auto py-20 px-4">
         <div class="flex items-center justify-center my-12">
-          <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center">
+          <h2
+            class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-black/90 text-center"
+          >
             Competitive Price. Best Value.
           </h2>
         </div>
@@ -639,42 +650,52 @@ import Footer from "../components/Footer.vue";
             class="bg-white rounded-2xl max-w-md mx-auto px-8 py-8 text-gray-500 shadow-xl/30"
           >
             <div class="flex items-center gap-3 mb-5">
-              <i class="fa-solid fa-money-bills text-2xl"></i>
-              <p class="font-semibold text-lg">For Account Transfers</p>
+              <i class="fa-solid fa-money-bills text-2xl text-green-600"></i>
+              <p class="font-semibold text-slate-800 text-lg">
+                For Account Transfers
+              </p>
             </div>
 
-            <p class="text-4xl font-bold mb-2">1.5%</p>
-            <p class="text-base mb-6">Fee is capped at N2000 per transaction</p>
+            <p class="text-4xl text-slate-800 font-bold mb-2">1.5%</p>
+            <p class="text-base mb-6 text-slate-800">
+              Fee is capped at N2000 per transaction
+            </p>
 
             <!-- OR Divider -->
             <div class="flex items-center my-6">
-              <div class="flex-grow border-t border-white"></div>
+              <div class="flex-grow border-t border-gray-800"></div>
               <span class="mx-4 text-sm font-medium">OR</span>
-              <div class="flex-grow border-t border-white"></div>
+              <div class="flex-grow border-t border-gray-800"></div>
             </div>
 
-            <p class="text-base">Local transaction fees are capped at N1500</p>
+            <p class="text-base text-slate-800">
+              Local transaction fees are capped at N1500
+            </p>
           </div>
 
           <div
             class="bg-white rounded-2xl max-w-md mx-auto px-8 py-8 text-gray-500 shadow-xl/30"
           >
             <div class="flex items-center gap-3 mb-5">
-              <i class="fa-solid fa-money-bills text-2xl"></i>
-              <p class="font-semibold text-lg">For Account Transfers</p>
+              <i class="fa-regular fa-credit-card text-2xl text-green-600"></i>
+              <p class="font-semibold text-slate-800 text-lg">For Cards</p>
             </div>
 
-            <p class="text-4xl font-bold mb-2">1.5%</p>
-            <p class="text-base mb-6">Fee is capped at N2000 per transaction</p>
+            <p class="text-4xl text-slate-800 font-bold mb-2">1.5%</p>
+            <p class="text-base text-slate-800 mb-6">
+              Fee is capped at N2000 per transaction
+            </p>
 
             <!-- OR Divider -->
             <div class="flex items-center my-6">
-              <div class="flex-grow border-t border-white"></div>
+              <div class="flex-grow border-t border-gray-800"></div>
               <span class="mx-4 text-sm font-medium">OR</span>
-              <div class="flex-grow border-t border-white"></div>
+              <div class="flex-grow border-t border-gray-800"></div>
             </div>
 
-            <p class="text-base">Local transaction fees are capped at N1500</p>
+            <p class="text-base text-slate-800">
+              International cards are charged and settled in naira
+            </p>
           </div>
         </div>
       </div>
@@ -682,9 +703,7 @@ import Footer from "../components/Footer.vue";
 
     <!--Get started section-->
 
-    <section
-      class="min-h-screen  flex items-center px-16 py-20"
-    >
+    <section class="flex items-center px-16 py-20">
       <div
         class="max-w-6xl mx-auto w-full flex flex-col md:flex-row items-center gap-16"
       >
@@ -704,13 +723,13 @@ import Footer from "../components/Footer.vue";
         <!-- Right: Form Card -->
         <div
           class="md:w-2/3 relative w-full rounded-2xl overflow-hidden"
-          style="background-color: #0d3d4f"
+          style="background-color: #dcfce7"
         >
           <!-- Orange blob top-right -->
           <div
             class="absolute -top-6 -right-6 w-40 h-40 rounded-full"
             style="
-              background-color: #f5a623;
+              background-color: #38bdf8;
               border-radius: 60% 40% 70% 30% / 50% 60% 40% 50%;
             "
           ></div>
@@ -730,42 +749,51 @@ import Footer from "../components/Footer.vue";
 
           <!-- Form Content -->
           <div class="relative z-10 p-12">
-            <h3 class="text-white text-2xl font-light mb-8">
-              Get started here
+            <h3 class="text-slate-800 text-xl font-light mb-8">
+              Get in touch
             </h3>
 
             <div class="flex flex-col gap-4">
               <!-- Business Name -->
               <input
-                
-                type="text"
-                placeholder="Business Name"
-                class="w-full px-5 py-4 rounded-xl text-slate-300 placeholder-slate-400 outline-none border-none"
-                style="background-color: #0f4d63"
+                type="string"
+                placeholder="Phone no"
+                class="w-full px-5 py-4 rounded-xl text-slate-800 placeholder-slate-600 outline-none border-none"
+                style="background-color: #86efac"
               />
 
-              <!-- Email -->
-              <input
-                
-                type="email"
-                placeholder="Your Email"
-                class="w-full px-5 py-4 rounded-xl text-slate-300 placeholder-slate-400 outline-none border-none"
-                style="background-color: #0f4d63"
-              />
-
-              <!-- Password -->
-              <input
-                
-                type="password"
-                placeholder="Password"
-                class="w-full px-5 py-4 rounded-xl text-slate-300 placeholder-slate-400 outline-none border-none"
-                style="background-color: #0f4d63"
-              />
+              <div class="relative w-full">
+                <label
+                  for="reason"
+                  class="block mb-1 text-sm font-semibold text-green-500"
+                >
+                </label>
+                <select
+                  id="reason"
+                  name="reason"
+                  class="w-full px-5 py-4 rounded-xl text-slate-800 placeholder-slate-600 outline-none border-none appearance-none bg-[#86efac] pr-8"
+                >
+                  <option value="" disabled selected>Select a reason</option>
+                  <option value="support">Account Opening</option>
+                  <option value="sales">Payment Issues</option>
+                  <option value="feedback">General Enquiry</option>
+                  <option value="other">Make an Enquiry</option>
+                </select>
+                <div
+                  class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-slate-300"
+                >
+                  <svg class="h-5 w-5 fill-current" viewBox="0 0 20 20">
+                    <path
+                      d="M5.516 7.548a.625.625 0 0 1 .882-.02L10 10.936l3.602-3.408a.625.625 0 1 1 .862.902l-4.053 3.837a.625.625 0 0 1-.866 0L5.516 8.43a.625.625 0 0 1 0-.882z"
+                    />
+                  </svg>
+                </div>
+              </div>
 
               <!-- Sign Up Button -->
               <button
-                class="w-full py-4 rounded-xl font-semibold text-slate-800 mt-2 hover:opacity-90 transition-opacity"
-                style="background-color: #f0ede8"
+                class="w-40 mx-auto py-4 rounded-full font-semibold bg-lime-600 text-white hover:bg-lime-700 shadow-lg shadow-lime-500/50 transition duration-300"
+                
                 @click="handleSignup"
               >
                 Sign up

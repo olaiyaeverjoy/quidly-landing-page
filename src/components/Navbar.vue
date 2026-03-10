@@ -11,10 +11,10 @@ const toggleMenu = () => {
 </script>
 
 <template>
-  <div class="bg-white shadow-sm">
+  <div class="bg-gray-100 ">
     <nav class="w-full mx-4 sm:px-6 lg:px-8 px-4 py-6 border-t">
-      <div class="flex justify-between items-center">
-        <img class="w-[99px] h-[35px] object-contain" :src="logo" alt="" />
+      <div class="flex justify-between items-center" data-aos="fade-down">
+        <img class="w-[99px] h-[35px] object-contain"  :src="logo" alt="" />
 
         <ul class="hidden sm:flex gap-7 items-center">
           <li>

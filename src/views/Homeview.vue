@@ -34,7 +34,7 @@ import Footer from "../components/Footer.vue";
 
     <!-- chat hero section-->
     <div
-      class="bg-white md:min-h-[70vh] flex items-center container mx-auto px-4"
+      class="bg-gray-100 md:min-h-[70vh] flex items-center container mx-auto px-4"
     >
       <div
         class="flex flex-col md:flex-row items-center justify-between w-full gap-10"
@@ -43,12 +43,15 @@ import Footer from "../components/Footer.vue";
         <div class="md:w-1/2">
           <h1
             class="text-5xl text-[#1f7de7] sm:text-6xl md:text-7xl lg:text-6xl xl:text-7xl font-semibold mb-4"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="0"
           >
             A Simpler Way To <br />
             Collect Payments
           </h1>
 
-          <p class="text-lg md:text-xl text-gray-400 mb-6">
+          <p class="text-lg md:text-xl text-gray-400 mb-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
             Quidly has made payment seamless for merchants <br />
             across Nigeria
           </p>
@@ -56,6 +59,9 @@ import Footer from "../components/Footer.vue";
           <a
             href="#"
             class="inline-block bg-lime-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-lime-700 transition"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="600"
           >
             Create Free Account
           </a>

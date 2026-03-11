@@ -9,7 +9,7 @@ import Footer from "../components/Footer.vue";
 
     <!--Hero Section-->
 
-    <!-- <div class="bg-white md:min-h-[70vh] items-center flex container mx-auto px-4 ">
+     <!-- <div class="bg-white md:min-h-[70vh] items-center flex container mx-auto px-4 ">
         <div class="container flex justify-between">
             <div>
                 <h1 class="text-5xl text-[#1f7de7] sm:text-6xl md:text-7xl lg:text-6xl xl:text-7xl font-semibold mb-4">
@@ -30,7 +30,7 @@ import Footer from "../components/Footer.vue";
                 <img class="w-72 sm:w-96 md:w-[400px] lg:w-[500px] h-auto object-contain" src="../assets/img/hero-pic.png" alt="">
             </div>
         </div>
-    </div> -->
+    </div>  -->
 
     <!-- chat hero section-->
     <div
@@ -69,11 +69,11 @@ import Footer from "../components/Footer.vue";
 
         <!-- Right Image -->
         <div class="md:w-1/2 flex justify-center md:justify-end">
-          <img src="../assets/img/hero-pic.png" alt="Hero Image" class="" />
+          <img src="..//assets/img/testing.jpeg" alt="Hero Image" class="" />
         </div>
       </div>
-    </div>
-
+    </div> 
+    
     <!--Container section-->
 
     <div class="max-w-7xl mx-auto px-4 py-16">
@@ -755,9 +755,7 @@ import Footer from "../components/Footer.vue";
 
           <!-- Form Content -->
           <div class="relative z-10 p-12">
-            <h3 class="text-slate-800 text-xl font-light mb-8">
-              Get in touch
-            </h3>
+            <h3 class="text-slate-800 text-xl font-light mb-8">Get in touch</h3>
 
             <div class="flex flex-col gap-4">
               <!-- Business Name -->
@@ -799,7 +797,6 @@ import Footer from "../components/Footer.vue";
               <!-- Sign Up Button -->
               <button
                 class="w-40 mx-auto py-4 rounded-full font-semibold bg-lime-600 text-white hover:bg-lime-700 shadow-lg shadow-lime-500/50 transition duration-300"
-                
                 @click="handleSignup"
               >
                 Sign up

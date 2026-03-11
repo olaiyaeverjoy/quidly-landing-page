@@ -35,14 +35,14 @@ import bgImage from "../assets/img/Our Services/new-hero-pic.png"
 
     <!-- chat hero section-->
     <div
-      class="w-full min-h-screen bg-cover bg-center bg-no-repeat flex items-center relative"
+      class="w-full h-[70vh] bg-right bg-no-repeat bg-contain flex items-center relative "
       :style="{backgroundImage: `url('${bgImage}')`}"
     >
-      <!-- <div
+      <div
         class="flex flex-col md:flex-row items-center justify-between w-full gap-10"
       >
-        Left Content
-        <div class="md:w-1/2">
+        <!-- Left Content -->
+        <div class="max-w-7xl md:w-1/2">
           <h1
             class="text-5xl text-[#1f7de7] sm:text-6xl md:text-7xl lg:text-6xl xl:text-7xl font-semibold mb-4"
             data-aos="fade-up"
@@ -74,15 +74,15 @@ import bgImage from "../assets/img/Our Services/new-hero-pic.png"
           </a>
         </div>
 
-        Right Image
+        <!-- Right Image -->
         <div class="md:w-1/2 flex justify-center md:justify-end">
-          <img
+          <!-- <img
             src=""
             alt="Hero Image"
             class="w-full max-w-lg object-contain"
-          />
+          /> -->
         </div>
-      </div> -->
+      </div>
     </div>
 
     <!--Container section-->

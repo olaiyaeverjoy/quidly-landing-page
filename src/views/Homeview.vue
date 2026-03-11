@@ -1,7 +1,7 @@
 <script setup>
 import Navbar from "../components/Navbar.vue";
 import Footer from "../components/Footer.vue";
-import bgImage from "../assets/img/Our Services/new-hero-pic.png"
+import bgImage from "../assets/img/Our Services/new-hero-pic.png";
 </script>
 
 <template>
@@ -10,17 +10,16 @@ import bgImage from "../assets/img/Our Services/new-hero-pic.png"
 
     <!--hero section-->
     <div
-      class="w-full min-h-[70vh] md:min-h-screen flex items-center px-6 md:px-12 relative"
-      
+      class="w-full min-h-[70vh] md:min-h-[80vh] flex items-center px-6 md:px-12 relative"
     >
-      <!-- <div
+      <div
         class="flex flex-col md:flex-row items-center justify-between w-full gap-10"
       >
-        Left Content
+        <!-- Left Content -->
         <div class="md:w-1/2">
           <h1
-            class="text-3xl text-[#1f7de7] sm:text-6xl font-semibold mb-4"
-            data-aos="fade-up" 
+            class="text-3xl text-left md:text-left text-[#1f7de7] sm:text-6xl font-semibold mb-4"
+            data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="0"
           >
@@ -49,24 +48,29 @@ import bgImage from "../assets/img/Our Services/new-hero-pic.png"
           </a>
         </div>
 
-        Right Image
-        <div class="md:w-1/2 flex justify-center md:justify-end">
+        <!-- Right Image -->
+        <div
+          class="w-full md:w-1/2 flex justify-center md:justify-end"
+        >
           <img
-            src=""
+            src="../assets/img/Our Services/new-hero-pic.png"
             alt="Hero Image"
-            class="w-full max-w-lg object-contain"
-          /> -->
+            class="w-full max-w-300 object-contain"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          />
         </div>
       </div>
     </div>
 
     <!--Container section-->
 
-    <div class="max-w-7xl mx-auto px-4 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:py-16">
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
         <!-- Card 1 -->
         <div
           class="bg-white rounded-xl shadow-sm hover:shadow-lg transition text-center flex flex-col justify-center p-6 h-72"
+          data-aos="fade-up"
         >
           <div
             class="mx-auto mb-6 w-14 h-14 flex bg-green-100 rounded-xl items-center justify-center text-3xl"
@@ -85,6 +89,7 @@ import bgImage from "../assets/img/Our Services/new-hero-pic.png"
         <!-- Card 2 -->
         <div
           class="bg-white rounded-xl shadow-sm hover:shadow-lg transition text-center flex flex-col items-center p-6 h-72"
+          data-aos="fade up"
         >
           <div
             class="mx-auto mb-6 w-14 h-14 flex bg-green-100 rounded-xl items-center justify-center text-3xl"
@@ -103,6 +108,7 @@ import bgImage from "../assets/img/Our Services/new-hero-pic.png"
         <!-- Card 3 -->
         <div
           class="bg-white rounded-xl shadow-sm hover:shadow-lg transition text-center flex flex-col items-center p-6 h-72"
+          data-aos="fade-up"
         >
           <div
             class="mx-auto mb-6 w-14 h-14 flex bg-green-100 rounded-xl items-center justify-center text-3xl"
@@ -121,6 +127,7 @@ import bgImage from "../assets/img/Our Services/new-hero-pic.png"
         <!-- Card 4 -->
         <div
           class="bg-white rounded-xl shadow-sm hover:shadow-lg transition text-center flex flex-col items-center p-6 h-72"
+          data-aos="fade-up"
         >
           <div
             class="mx-auto mb-6 w-14 h-14 flex bg-green-100 rounded-xl items-center justify-center text-3xl"
@@ -149,6 +156,8 @@ import bgImage from "../assets/img/Our Services/new-hero-pic.png"
               src="..//assets/img/about-us.png"
               alt="About Us Image"
               class="w-[400px] max-w-full"
+              data-aos="flip-left"
+              data-aos-duration="1000"
             />
           </div>
 
@@ -181,6 +190,9 @@ import bgImage from "../assets/img/Our Services/new-hero-pic.png"
               <a
                 href="/about"
                 class="inline-block bg-lime-600 text-white px-6 py-3 rounded-full hover:bg-lime-700 shadow-lg shadow-lime-500/50 transition duration-300"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="300"
               >
                 Learn More
               </a>
@@ -194,170 +206,6 @@ import bgImage from "../assets/img/Our Services/new-hero-pic.png"
     <div
       class="bottom-0 left-0 w-full bg-gradient-to-r from-slate-100 to-green-100"
     >
-      <!-- commented previous our services section
-      <section class="py-20">
-        <div class="max-w-7xl mx-auto px-4">
-          
-          <div class="text-center flex justify-center">
-            <div class="max-w-3xl mb-12">
-              <h2 class="text-3xl md:text-4xl font-semibold mb-4">
-                Our Services
-              </h2>
-
-              
-              <div class="flex items-center justify-center gap-2 mb-6">
-                <div class="w-12 h-1 bg-gray-800"></div>
-                <div class="w-12 h-1 bg-gray-800"></div>
-              </div>
-            </div>
-          </div>
-
-          
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            
-            <div
-              class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300"
-            >
-              <a href="#">
-                <img
-                  src="..//assets/img/Our Services/virtual-pos.jpg   "
-                  alt="Virtual POS"
-                  class="w-full h-56 object-cover"
-                />
-              </a>
-              <div class="p-6">
-                <h3 class="text-xl font-semibold mb-3">
-                  <a href="#" class="hover:text-blue-600 transition"
-                    >Virtual POS</a
-                  >
-                </h3>
-                <p class="text-gray-600 text-sm leading-relaxed">
-                  Our virtual POS is a “POS-anywhere” offering that extends
-                  reach to pay agents even in remote locations.
-                </p>
-              </div>
-            </div>
-
-            
-            <div
-              class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300"
-            >
-              <a href="#">
-                <img
-                  src="..//assets/img/Our Services/payment-invoice.jpg"
-                  alt="Payment Invoice"
-                  class="w-full h-56 object-cover"
-                />
-              </a>
-              <div class="p-6">
-                <h3 class="text-xl font-semibold mb-3">
-                  <a href="#" class="hover:text-blue-600 transition"
-                    >Payment Invoice</a
-                  >
-                </h3>
-                <p class="text-gray-600 text-sm leading-relaxed">
-                  Custom electronic invoice to initiate payment via email or
-                  merchant's user portal.
-                </p>
-              </div>
-            </div>
-
-            
-            <div
-              class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300"
-            >
-              <a href="#">
-                <img
-                  src="..//assets/img/Our Services/payment-web-widget.png"
-                  alt="Payment Web Widget"
-                  class="w-full h-56 object-cover"
-                />
-              </a>
-              <div class="p-6">
-                <h3 class="text-xl font-semibold mb-3">
-                  <a href="#" class="hover:text-blue-600 transition"
-                    >Payment Web Widget</a
-                  >
-                </h3>
-                <p class="text-gray-600 text-sm leading-relaxed">
-                  Ease of integration and cost effectiveness, including card
-                  payments and bank transfers.
-                </p>
-              </div>
-            </div>
-
-            
-            <div
-              class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300"
-            >
-              <a href="#">
-                <img
-                  src="..//assets/img/Our Services/QR-code.jpg"
-                  alt="QRCode"
-                  class="w-full h-56 object-cover"
-                />
-              </a>
-              <div class="p-6">
-                <h3 class="text-xl font-semibold mb-3">
-                  <a href="#" class="hover:text-blue-600 transition">QRCode</a>
-                </h3>
-                <p class="text-gray-600 text-sm leading-relaxed">
-                  With QR-codes on stalls or restaurant tables, users can
-                  securely initiate payment on their own device.
-                </p>
-              </div>
-            </div>
-
-            
-            <div
-              class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300"
-            >
-              <a href="#">
-                <img
-                  src="..//assets/img/Our Services/salary-payments.jpg"
-                  alt="Salary Bulk Payment"
-                  class="w-full h-56 object-cover"
-                />
-              </a>
-              <div class="p-6">
-                <h3 class="text-xl font-semibold mb-3">
-                  <a href="#" class="hover:text-blue-600 transition"
-                    >Salary (Bulk) Payment</a
-                  >
-                </h3>
-                <p class="text-gray-600 text-sm leading-relaxed">
-                  Allows you to make multiple debit payments to a bulk list.
-                </p>
-              </div>
-            </div>
-
-            
-            <div
-              class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300"
-            >
-              <a href="#">
-                <img
-                  src="..//assets/img/Our Services/credit-list.jpg"
-                  alt="Mandate Payment"
-                  class="w-full h-56 object-cover"
-                />
-              </a>
-              <div class="p-6">
-                <h3 class="text-xl font-semibold mb-3">
-                  <a href="#" class="hover:text-blue-600 transition"
-                    >Credit List</a
-                  >
-                </h3>
-                <p class="text-gray-600 text-sm leading-relaxed">
-                  Your written instructions for deductions, e.g. installment
-                  payments.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    -->
 
       <div class="max-w-7xl mx-auto px-4 py-20">
         <div class="mb-24">
@@ -374,7 +222,7 @@ import bgImage from "../assets/img/Our Services/new-hero-pic.png"
             <img
               src="..//assets/img/Our Services/Services-img.png"
               alt=""
-              class=" object-cover"
+              class="object-cover"
             />
           </div>
 
@@ -463,7 +311,7 @@ import bgImage from "../assets/img/Our Services/new-hero-pic.png"
 
       <!--Code from claude-->
 
-      <section class="flex items-center py-20 px-16">
+      <section class="flex items-center py-20 px-6 md:px-16">
         <div
           class="max-w-6xl mx-auto w-full flex flex-col md:flex-row items-center gap-12"
         >
@@ -477,10 +325,10 @@ import bgImage from "../assets/img/Our Services/new-hero-pic.png"
           </div>
 
           <!-- Right: Cards -->
-          <div class="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div class="w-full md:w-2/3 flex flex-nowrap overflow-x-auto md:grid md:grid-cols-2 sm:grid-cols-2 gap-6 scrollbar-hide">
             <!-- Card 1 - USSD / Mobile -->
             <div
-              class="card-flip-in bg-white rounded-2xl shadow-sm p-8 flex flex-col gap-4"
+              class=" min-w-[250px] bg-white rounded-2xl shadow-sm p-8 flex flex-col gap-4"
               style="animation-delay: 0.1s"
             >
               <div
@@ -503,7 +351,7 @@ import bgImage from "../assets/img/Our Services/new-hero-pic.png"
             </div>
 
             <!-- Card 2 - Cards -->
-            <div class="bg-white rounded-2xl shadow-sm p-8 flex flex-col gap-4">
+            <div class="min-w-[250px] bg-white rounded-2xl shadow-sm p-8 flex flex-col gap-4">
               <div
                 class="w-14 h-14 bg-green-100 rounded-xl flex items-center justify-center"
               >
@@ -529,30 +377,10 @@ import bgImage from "../assets/img/Our Services/new-hero-pic.png"
         <!-- Section Title -->
 
         <div class="max-w-7xl mx-auto px-4">
-          <div class="text-center flex justify-center">
-            <div class="max-w-3xl mb-12">
-              <!-- <h2 class="text-3xl md:text-4xl font-semibold mb-3">
-                Why Choose Us
-              </h2> -->
-
-              <!-- Title Border -->
-              <!-- <div class="relative w-72 h-2 mx-auto overflow-hidden">
-                Left line stretches
-                <div
-                  class="absolute top-1/2 -translate-y-1/2 h-1 bg-gray-800 shadow-lg animate-stretch-left"
-                ></div>
-
-                Right line stretches
-                <div
-                  class="absolute top-1/2 -translate-y-1/2 h-1 bg-gray-800 shadow-lg animate-stretch-right"
-                ></div>
-              </div> -->
-            </div>
-          </div>
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <!-- Image/Text Column -->
             <div class="justify-center lg:justify-start">
-              <h2 class="text-7xl text-bold text-slate-800 mb-4">
+              <h2 class="text-5xl md:text-7xl text-bold text-slate-800 mb-4">
                 Faster Growth
               </h2>
               <p class="text-gray-600 text-4xl">
@@ -637,9 +465,9 @@ import bgImage from "../assets/img/Our Services/new-hero-pic.png"
           </h2>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-16">
+        <div class="w-full flex flex-nowrap overflow-x-auto md:grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-16">
           <div
-            class="bg-white rounded-2xl max-w-md mx-auto px-8 py-8 text-gray-500 shadow-xl/30"
+            class="min-w-65 bg-white rounded-2xl max-w-md mx-auto px-8 py-8 text-gray-500 shadow-xl"
           >
             <div class="flex items-center gap-3 mb-5">
               <i class="fa-solid fa-money-bills text-2xl text-green-600"></i>
@@ -652,7 +480,7 @@ import bgImage from "../assets/img/Our Services/new-hero-pic.png"
             <p class="text-base mb-6 text-slate-800">
               Fee is capped at N2000 per transaction
             </p>
-
+  
             <!-- OR Divider -->
             <div class="flex items-center my-6">
               <div class="flex-grow border-t border-gray-800"></div>
@@ -666,7 +494,7 @@ import bgImage from "../assets/img/Our Services/new-hero-pic.png"
           </div>
 
           <div
-            class="bg-white rounded-2xl max-w-md mx-auto px-8 py-8 text-gray-500 shadow-xl/30"
+            class="min-w-65 bg-white rounded-2xl max-w-md mx-auto px-8 py-8 text-gray-500 shadow-xl"
           >
             <div class="flex items-center gap-3 mb-5">
               <i class="fa-regular fa-credit-card text-2xl text-green-600"></i>

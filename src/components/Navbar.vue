@@ -76,9 +76,9 @@ const toggleMenu = () => {
             <li><a class="font-semibold text-sm" href="#">Prices</a></li>
             <li>
               <button
-                class="rounded drop-shadow-lg text-white text-xs py-1 px-6 bg-lime-600 hover:bg-lime-800 transition duration-300"
+                class="rounded drop-shadow-lg text-white text-xs py-2 px-6 bg-lime-600 hover:bg-lime-800 transition duration-300"
               >
-                Sign In
+                Get started
               </button>
             </li>
           </ul>

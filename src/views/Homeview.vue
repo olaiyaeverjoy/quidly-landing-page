@@ -1,6 +1,7 @@
 <script setup>
 import Navbar from "../components/Navbar.vue";
 import Footer from "../components/Footer.vue";
+import bgImage from "../assets/img/Our Services/new-hero-pic.png"
 </script>
 
 <template>
@@ -9,7 +10,7 @@ import Footer from "../components/Footer.vue";
 
     <!--Hero Section-->
 
-     <!-- <div class="bg-white md:min-h-[70vh] items-center flex container mx-auto px-4 ">
+    <!-- <div class="bg-white md:min-h-[70vh] items-center flex container mx-auto px-4 ">
         <div class="container flex justify-between">
             <div>
                 <h1 class="text-5xl text-[#1f7de7] sm:text-6xl md:text-7xl lg:text-6xl xl:text-7xl font-semibold mb-4">
@@ -34,12 +35,13 @@ import Footer from "../components/Footer.vue";
 
     <!-- chat hero section-->
     <div
-      class="bg-gray-100 md:min-h-[70vh] flex items-center container mx-auto px-4"
+      class="w-full min-h-screen bg-cover bg-center bg-no-repeat flex items-center relative"
+      :style="{backgroundImage: `url('${bgImage}')`}"
     >
-      <div
+      <!-- <div
         class="flex flex-col md:flex-row items-center justify-between w-full gap-10"
       >
-        <!-- Left Content -->
+        Left Content
         <div class="md:w-1/2">
           <h1
             class="text-5xl text-[#1f7de7] sm:text-6xl md:text-7xl lg:text-6xl xl:text-7xl font-semibold mb-4"
@@ -51,7 +53,12 @@ import Footer from "../components/Footer.vue";
             Collect Payments
           </h1>
 
-          <p class="text-lg md:text-xl text-gray-400 mb-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+          <p
+            class="text-lg md:text-xl text-gray-400 mb-6"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+          >
             Quidly has made payment seamless for merchants <br />
             across Nigeria
           </p>
@@ -67,13 +74,17 @@ import Footer from "../components/Footer.vue";
           </a>
         </div>
 
-        <!-- Right Image -->
+        Right Image
         <div class="md:w-1/2 flex justify-center md:justify-end">
-          <img src="..//assets/img/testing.jpeg" alt="Hero Image" class="" />
+          <img
+            src=""
+            alt="Hero Image"
+            class="w-full max-w-lg object-contain"
+          />
         </div>
-      </div>
-    </div> 
-    
+      </div> -->
+    </div>
+
     <!--Container section-->
 
     <div class="max-w-7xl mx-auto px-4 py-16">

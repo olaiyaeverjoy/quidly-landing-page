@@ -13,11 +13,11 @@ import bgImage from "../assets/img/Our Services/new-hero-pic.png"
       class="w-full min-h-[70vh] md:min-h-screen flex items-center px-6 md:px-12 relative"
       
     >
-      <div
-        class="flex flex-col md:flex-row items-center justify-between w-full  gap-8"
+      <!-- <div
+        class="flex flex-col md:flex-row items-center justify-between w-full gap-10"
       >
-        <!-- Left Content -->
-        <div class="w-full md:w-1/2 text-left md:text-left">
+        Left Content
+        <div class="md:w-1/2">
           <h1
             class="text-3xl text-[#1f7de7] sm:text-6xl font-semibold mb-4"
             data-aos="fade-up" 
@@ -49,15 +49,9 @@ import bgImage from "../assets/img/Our Services/new-hero-pic.png"
           </a>
         </div>
 
-        <!-- Right Image -->
-        <div 
-          class="w-full md:w-1/2 h-75 sm:h-100 md:h-125 
-             bg-contain bg-no-repeat bg-center md:bg-right"
-          :style="{backgroundImage: `url('${bgImage}')`}"
-          data-aos="fade up"
-          data-aos-duration="1000"
-        >
-          <!-- <img
+        Right Image
+        <div class="md:w-1/2 flex justify-center md:justify-end">
+          <img
             src=""
             alt="Hero Image"
             class="w-full max-w-lg object-contain"

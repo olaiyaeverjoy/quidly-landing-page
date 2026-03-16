@@ -33,9 +33,9 @@ const toggleMenu = () => {
 
         <!--Desktop button -->
         <button
-          class="hidden sm:block rounded drop-shadow-lg text-white px-4 py-1 bg-lime-600 hover:bg-lime-800 transition duration-300"
+          class="hidden sm:block rounded drop-shadow-lg text-white text-xs px-6 py-2 bg-lime-600 hover:bg-lime-800 transition duration-300"
         >
-          Sign In
+          Get Started
         </button>
 
         <!--Hamburger -->
@@ -76,7 +76,7 @@ const toggleMenu = () => {
             <li><a class="font-semibold text-sm" href="#">Prices</a></li>
             <li>
               <button
-                class="rounded drop-shadow-lg text-white text-sm py-1 px-6 bg-lime-600 hover:bg-lime-800 transition duration-300"
+                class="rounded drop-shadow-lg text-white text-xs py-1 px-6 bg-lime-600 hover:bg-lime-800 transition duration-300"
               >
                 Sign In
               </button>

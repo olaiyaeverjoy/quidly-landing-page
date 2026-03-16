@@ -5,47 +5,22 @@ import bgImage from "../assets/img/Our Services/new-hero-pic.png"
 </script>
 
 <template>
-  <div class="relative bg-gray-100 overflow-hidden">
+  <div class="relative bg-gray-100 px-4 sm:px-6 overflow-hidden">
     <Navbar />
 
-    <!--Hero Section-->
-
-    <!-- <div class="bg-white md:min-h-[70vh] items-center flex container mx-auto px-4 ">
-        <div class="container flex justify-between">
-            <div>
-                <h1 class="text-5xl text-[#1f7de7] sm:text-6xl md:text-7xl lg:text-6xl xl:text-7xl font-semibold mb-4">
-                    A Better Way To <br>
-                    Collect Payments
-                </h1>
-                <p class="text-lg md:text-xl text-gray-400 mb-6">
-                    Quidly has made payment seemless for merchants <br> across Nigeria
-                </p>    
-                <a
-                    href="#"
-                    class="inline-block bg-lime-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-purple-700 transition"
-                >
-                    Create Free Account
-                </a>
-            </div>
-            <div class="">
-                <img class="w-72 sm:w-96 md:w-[400px] lg:w-[500px] h-auto object-contain" src="../assets/img/hero-pic.png" alt="">
-            </div>
-        </div>
-    </div>  -->
-
-    <!-- chat hero section-->
+    <!--hero section-->
     <div
-      class="w-full min-h-screen bg-cover bg-center bg-no-repeat flex items-center relative"
-      :style="{backgroundImage: `url('${bgImage}')`}"
+      class="w-full min-h-[70vh] md:min-h-screen flex items-center px-6 md:px-12 relative"
+      
     >
-      <!-- <div
-        class="flex flex-col md:flex-row items-center justify-between w-full gap-10"
+      <div
+        class="flex flex-col md:flex-row items-center justify-between w-full  gap-8"
       >
-        Left Content
-        <div class="md:w-1/2">
+        <!-- Left Content -->
+        <div class="w-full md:w-1/2 text-left md:text-left">
           <h1
-            class="text-5xl text-[#1f7de7] sm:text-6xl md:text-7xl lg:text-6xl xl:text-7xl font-semibold mb-4"
-            data-aos="fade-up"
+            class="text-3xl text-[#1f7de7] sm:text-6xl font-semibold mb-4"
+            data-aos="fade-up" 
             data-aos-duration="1000"
             data-aos-delay="0"
           >
@@ -54,7 +29,7 @@ import bgImage from "../assets/img/Our Services/new-hero-pic.png"
           </h1>
 
           <p
-            class="text-lg md:text-xl text-gray-400 mb-6"
+            class="text-xs md:text-xs lg:text-lg text-gray-400 mb-6"
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="300"
@@ -74,15 +49,21 @@ import bgImage from "../assets/img/Our Services/new-hero-pic.png"
           </a>
         </div>
 
-        Right Image
-        <div class="md:w-1/2 flex justify-center md:justify-end">
-          <img
+        <!-- Right Image -->
+        <div 
+          class="w-full md:w-1/2 h-75 sm:h-100 md:h-125 
+             bg-contain bg-no-repeat bg-center md:bg-right"
+          :style="{backgroundImage: `url('${bgImage}')`}"
+          data-aos="fade up"
+          data-aos-duration="1000"
+        >
+          <!-- <img
             src=""
             alt="Hero Image"
             class="w-full max-w-lg object-contain"
-          />
+          /> -->
         </div>
-      </div> -->
+      </div>
     </div>
 
     <!--Container section-->
@@ -397,9 +378,9 @@ import bgImage from "../assets/img/Our Services/new-hero-pic.png"
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
           <div class="flex justify-center lg:justify-center">
             <img
-              src="..//assets/img/Our Services/newimage4slide.jpeg"
+              src="..//assets/img/Our Services/Services-img.png"
               alt=""
-              class="w-[636px] h-[704px]"
+              class=" object-cover"
             />
           </div>
 

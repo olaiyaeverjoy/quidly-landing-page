@@ -637,7 +637,7 @@ import Pricingcalculator from "../components/pricingcalculator.vue";
           </h2>
         </div>
         
-        <div class="flex grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-16">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-16">
           <div
             class="bg-white rounded-2xl max-w-md mx-auto px-8 py-8 text-gray-500 shadow-xl/30"
           >
@@ -688,7 +688,7 @@ import Pricingcalculator from "../components/pricingcalculator.vue";
             </p>
           </div>
          
-          !-- pricing calculator -->
+          <!-- pricing calculator -->
            <div class=""> 
             <Pricingcalculator />
            </div>

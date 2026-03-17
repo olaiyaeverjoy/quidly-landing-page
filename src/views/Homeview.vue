@@ -1,7 +1,8 @@
 <script setup>
 import Navbar from "../components/Navbar.vue";
 import Footer from "../components/Footer.vue";
-
+import bgImage from "../assets/img/Our Services/new-hero-pic.png"
+import Pricingcalculator from "../components/pricingcalculator.vue";
 </script>
 
 <template>
@@ -462,10 +463,9 @@ import Footer from "../components/Footer.vue";
     </div>
 
     <!--Our Pricing-->
-
-    <section>
+     <section>
       <div class="max-w-4xl mx-auto py-20 px-4">
-        <div class="flex items-center justify-center my-12">
+        <div class="flex items-center justify-center position-absolute my-12">
           <h2
             class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-black/90 text-center"
           >
@@ -485,7 +485,6 @@ import Footer from "../components/Footer.vue";
                 For Account Transfers
               </p>
             </div>
-
             <p class="text-4xl text-slate-800 font-bold mb-2">1.5%</p>
             <p class="text-base mb-6 text-slate-800">
               Fee is capped at N2000 per transaction
@@ -502,7 +501,7 @@ import Footer from "../components/Footer.vue";
               Local transaction fees are capped at N1500
             </p>
           </div>
-
+          
           <div
             class="min-w-62.5 bg-white rounded-2xl max-w-md mx-auto px-8 py-8 text-gray-500 shadow-xl"
           >
@@ -515,7 +514,6 @@ import Footer from "../components/Footer.vue";
             <p class="text-base text-slate-800 mb-6">
               Fee is capped at N2000 per transaction
             </p>
-
             <!-- OR Divider -->
             <div class="flex items-center my-6">
               <div class="flex-grow border-t border-gray-800"></div>
@@ -527,10 +525,17 @@ import Footer from "../components/Footer.vue";
               International cards are charged and settled in naira
             </p>
           </div>
+         
+          <!-- pricing calculator -->
+           <div class=""> 
+            <Pricingcalculator />
+           </div>
         </div>
+          <
       </div>
-    </section>
-
+        
+  </section>
+        
     <!--Get started section-->
 
     <section class="flex items-center px-16 py-20">

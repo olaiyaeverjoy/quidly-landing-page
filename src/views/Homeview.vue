@@ -1,7 +1,7 @@
 <script setup>
 import Navbar from "../components/Navbar.vue";
 import Footer from "../components/Footer.vue";
-import bgImage from "../assets/img/Our Services/new-hero-pic.png";
+
 </script>
 
 <template>
@@ -49,9 +49,7 @@ import bgImage from "../assets/img/Our Services/new-hero-pic.png";
         </div>
 
         <!-- Right Image -->
-        <div
-          class="w-full md:w-1/2 flex justify-center md:justify-end"
-        >
+        <div class="w-full md:w-1/2 flex justify-center md:justify-end">
           <img
             src="../assets/img/Our Services/new-hero-pic.png"
             alt="Hero Image"
@@ -177,6 +175,9 @@ import bgImage from "../assets/img/Our Services/new-hero-pic.png";
             <!-- Description -->
             <p
               class="text-base font-semibold text-gray-600 tracking-wide leading-relaxed text-center lg:text-left mb-8"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="300"
             >
               Quidly is aimed to provide disruptive technology solutions in the
               Nigeria payment space. With simple to integrate payment APIs, data
@@ -192,7 +193,7 @@ import bgImage from "../assets/img/Our Services/new-hero-pic.png";
                 class="inline-block bg-lime-600 text-white px-6 py-3 rounded-full hover:bg-lime-700 shadow-lg shadow-lime-500/50 transition duration-300"
                 data-aos="fade-up"
                 data-aos-duration="1000"
-                data-aos-delay="300"
+                data-aos-delay="600"
               >
                 Learn More
               </a>
@@ -206,7 +207,6 @@ import bgImage from "../assets/img/Our Services/new-hero-pic.png";
     <div
       class="bottom-0 left-0 w-full bg-gradient-to-r from-slate-100 to-green-100"
     >
-
       <div class="max-w-7xl mx-auto px-4 py-20">
         <div class="mb-24">
           <h2 class="font-bold text-4xl text-slate-800 mb-4">
@@ -325,11 +325,15 @@ import bgImage from "../assets/img/Our Services/new-hero-pic.png";
           </div>
 
           <!-- Right: Cards -->
-          <div class="w-full md:w-2/3 flex flex-nowrap overflow-x-auto md:grid md:grid-cols-2 sm:grid-cols-2 gap-6 scrollbar-hide">
+          <div
+            class="w-full md:w-2/3 flex flex-nowrap overflow-x-auto md:grid md:grid-cols-2 sm:grid-cols-2 gap-6 scrollbar-hide"
+          >
             <!-- Card 1 - USSD / Mobile -->
             <div
-              class=" min-w-[250px] bg-white rounded-2xl shadow-sm p-8 flex flex-col gap-4"
-              style="animation-delay: 0.1s"
+              class="min-w-62.5 bg-white rounded-2xl shadow-sm p-8 flex flex-col gap-4"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
             >
               <div
                 class="w-14 h-14 bg-green-100 rounded-xl flex items-center justify-center"
@@ -343,15 +347,20 @@ import bgImage from "../assets/img/Our Services/new-hero-pic.png";
                   USSD, Mobile and Internet Transfers
                 </h3>
                 <p class="text-sm text-slate-500 leading-relaxed">
-                  Using Monnify, your customers can make payment to you on your
-                  website or app by initiating a simple interbank transfer using
-                  USSD, internet banking or their mobile banking app.
+                  With Quidly, customers can easily pay you through your website
+                  or app by initiating a quick bank transfer via USSD, internet
+                  banking, or their mobile banking app.
                 </p>
               </div>
             </div>
 
             <!-- Card 2 - Cards -->
-            <div class="min-w-[250px] bg-white rounded-2xl shadow-sm p-8 flex flex-col gap-4">
+            <div
+              class="min-w-62.5 bg-white rounded-2xl shadow-sm p-8 flex flex-col gap-4"
+              data-aos="flip-right"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+            >
               <div
                 class="w-14 h-14 bg-green-100 rounded-xl flex items-center justify-center"
               >
@@ -360,10 +369,9 @@ import bgImage from "../assets/img/Our Services/new-hero-pic.png";
               <div>
                 <h3 class="text-base font-bold text-slate-800 mb-2">Cards</h3>
                 <p class="text-sm text-slate-500 leading-relaxed">
-                  Monnify allows you receive payments via debit cards online,
-                  while offering the most competitive transaction fees
-                  obtainable. Cards can also be tokenized for convenient
-                  recurring billing on cards.
+                  Quidly enables you to accept online payments via debit cards
+                  at highly competitive transaction fees, with the added benefit
+                  of card tokenization for seamless recurring billing.
                 </p>
               </div>
             </div>
@@ -465,9 +473,11 @@ import bgImage from "../assets/img/Our Services/new-hero-pic.png";
           </h2>
         </div>
 
-        <div class="w-full flex flex-nowrap overflow-x-auto md:grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-16">
+        <div
+          class="w-full flex flex-nowrap overflow-x-auto md:grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-16 "
+        >
           <div
-            class="min-w-65 bg-white rounded-2xl max-w-md mx-auto px-8 py-8 text-gray-500 shadow-xl"
+            class="min-w-62.5 bg-white rounded-2xl max-w-md mx-auto px-8 py-8 text-gray-500 shadow-xl"
           >
             <div class="flex items-center gap-3 mb-5">
               <i class="fa-solid fa-money-bills text-2xl text-green-600"></i>
@@ -480,7 +490,7 @@ import bgImage from "../assets/img/Our Services/new-hero-pic.png";
             <p class="text-base mb-6 text-slate-800">
               Fee is capped at N2000 per transaction
             </p>
-  
+
             <!-- OR Divider -->
             <div class="flex items-center my-6">
               <div class="flex-grow border-t border-gray-800"></div>
@@ -494,7 +504,7 @@ import bgImage from "../assets/img/Our Services/new-hero-pic.png";
           </div>
 
           <div
-            class="min-w-65 bg-white rounded-2xl max-w-md mx-auto px-8 py-8 text-gray-500 shadow-xl"
+            class="min-w-62.5 bg-white rounded-2xl max-w-md mx-auto px-8 py-8 text-gray-500 shadow-xl"
           >
             <div class="flex items-center gap-3 mb-5">
               <i class="fa-regular fa-credit-card text-2xl text-green-600"></i>

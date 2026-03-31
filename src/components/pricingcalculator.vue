@@ -16,23 +16,23 @@ const total = computed(() => {
 </script>
 
 <template>
- <div class="bg-white  grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 max-w-md mx-auto px-8 py-8 text-center mt-8 p-4 rounded-2xl shadow-xl/40 
-             transition duration-300 hover:scale-105 hover:shadow-xl ">
-    
-    <h2 class="text-lg text-gray-900 font-bold mb-4"> Fee/Transactions <i class="fa-solid fa-money-bill-1"></i>
+  <div
+    class="bg-white grid grid-cols-1 sm:grid-cols-1 max-w-md mx-auto px-8 py-14 text-center mt-8 p-4 rounded-2xl shadow-xl transition duration-300 hover:scale-105 hover:shadow-xl/30"
+  >
+    <h2 class="text-lg text-gray-900 font-bold mb-4">
+      <i class="fa-solid fa-money-bill-1 text-2xl text-green-600 mr-2"></i>Fee/Transactions 
     </h2>
 
     <input
       type="number"
       v-model.number="amount"
       placeholder="20000"
-      class="w-full pl-7 pr-3 py-2 text-sm border border-gray-100 rounded-md 
-             focus:outline-none focus:ring-2 focus:ring-gray-100 focus:border-gray-100
-             transition duration-200 bg-gray-200 mb-7"
+      class="w-full pl-7 pr-3 py-2 text-sm border border-gray-100 rounded-md hover:outline-gray-600 transition duration-200 bg-gray-200 mb-7"
     />
 
-    <div class="text-left space-y-1 space-x-1.5 text-gray-900 font-bold text-sm gap-2">
-
+    <div
+      class="text-left space-y-1 space-x-1.5 text-gray-900 font-bold text-sm gap-2"
+    >
       <p class="flex justify-between mb-10px">
         <span> Fee Per transaction(1.3%):</span>
         <span class="font-medium">{{ interest }}</span>
@@ -47,13 +47,13 @@ const total = computed(() => {
     <div class="text-gray-900 mt-4 text-sm">
       <ol class="space-y-2">
         <li>Automatic settlement within 24 hours</li>
-        <hr class="border-gray-400">
+        <hr class="border-gray-400" />
 
         <li>Volume discounts available</li>
-        <hr class="border-gray-400">
+        <hr class="border-gray-400" />
 
         <li>No hidden fees or charges</li>
-        <hr class="border-gray-400">
+        <hr class="border-gray-400" />
 
         <!-- <li>Z</li>
         <hr class="border-gray-400"> -->
@@ -61,7 +61,6 @@ const total = computed(() => {
         <li>Zero maintenance fee</li>
       </ol>
     </div>
-
   </div>
 </template>
 

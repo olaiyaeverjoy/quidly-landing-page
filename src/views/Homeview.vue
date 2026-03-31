@@ -1,8 +1,116 @@
 <script setup>
 import Navbar from "../components/Navbar.vue";
 import Footer from "../components/Footer.vue";
-import bgImage from "../assets/img/Our Services/new-hero-pic.png"
+
+import { onMounted, ref } from "vue";
+import { useToast } from "vue-toastification";
+
 import Pricingcalculator from "../components/pricingcalculator.vue";
+
+const phone = ref("");
+const reason = ref("");
+
+const callBackReason = ref([]);
+
+const showSuccessPopup = ref(false);
+
+const closePopup = () => {
+  showSuccessPopup.value = false;
+};
+
+const loading = ref();
+const toast = useToast();
+
+const getReasons = async () => {
+  try {
+    const res = await fetch(
+      "https://api01-dev.quidly.ng/api/mdb/procedure/get_callbackreasons",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          //must pass request body from the api
+          p_status: 1,
+        }),
+      },
+    );
+
+    const data = await res.json();
+    console.log("data:", data);
+
+    if (data.status === 1) {
+      callBackReason.value = data.jsresult;
+    }
+    console.log("Reasons:", callBackReason.value);
+  } catch (err) {
+    console.error("Error fetching reasons:", err);
+  }
+};
+
+onMounted(() => {
+  getReasons();
+});
+
+const handleSignup = async () => {
+  // ✅ simple validation
+  if (!phone.value) {
+    alert("Please enter your phone number");
+    return;
+  }
+
+  if (!reason.value) {
+    alert("Please select a reason");
+    return;
+  }
+
+  loading.value = true;
+
+  const payload = {
+    p_phoneno: phone.value,
+    p_callbackreasonid: reason.value,
+  };
+
+  // ✅ log it (object)
+  console.log("Payload object:", payload);
+
+  // ✅ log it (JSON string)
+  console.log("Payload JSON:", JSON.stringify(payload));
+
+  try {
+    const res = await fetch(
+      "https://api01-dev.quidly.ng/api/mdb/procedure/addCallbackRequest",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          //must always pass request body from the api
+          p_phoneno: phone.value,
+          p_callbackreasonid: reason.value,
+        }),
+      },
+    );
+
+    const data = await res.json();
+
+    if (res.ok && data.status === 1) {
+      showSuccessPopup.value = true;
+    } else {
+      toast.error(data.message || "Failed to add reason");
+    }
+
+    console.log("Success:", data);
+
+    phone.value = "";
+    reason.value = "";
+  } catch (err) {
+    console.log("Error:", err);
+    toast.error("Reason not added");
+  }
+};
 </script>
 
 <template>
@@ -463,7 +571,7 @@ import Pricingcalculator from "../components/pricingcalculator.vue";
     </div>
 
     <!--Our Pricing-->
-     <section>
+    <section>
       <div class="max-w-4xl mx-auto py-20 px-4">
         <div class="flex items-center justify-center position-absolute my-12">
           <h2
@@ -474,7 +582,7 @@ import Pricingcalculator from "../components/pricingcalculator.vue";
         </div>
 
         <div
-          class="w-full flex flex-nowrap overflow-x-auto md:grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-16 "
+          class="w-full flex flex-nowrap overflow-x-auto md:grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-16"
         >
           <div
             class="min-w-62.5 bg-white rounded-2xl max-w-md mx-auto px-8 py-8 text-gray-500 shadow-xl"
@@ -485,7 +593,7 @@ import Pricingcalculator from "../components/pricingcalculator.vue";
                 For Account Transfers
               </p>
             </div>
-            <p class="text-4xl text-slate-800 font-bold mb-2">1.5%</p>
+            <p class="text-4xl text-slate-800 font-bold mb-2">1.3%</p>
             <p class="text-base mb-6 text-slate-800">
               Fee is capped at N2000 per transaction
             </p>
@@ -501,7 +609,7 @@ import Pricingcalculator from "../components/pricingcalculator.vue";
               Local transaction fees are capped at N1500
             </p>
           </div>
-          
+
           <div
             class="min-w-62.5 bg-white rounded-2xl max-w-md mx-auto px-8 py-8 text-gray-500 shadow-xl"
           >
@@ -510,7 +618,7 @@ import Pricingcalculator from "../components/pricingcalculator.vue";
               <p class="font-semibold text-slate-800 text-lg">For Cards</p>
             </div>
 
-            <p class="text-4xl text-slate-800 font-bold mb-2">1.5%</p>
+            <p class="text-4xl text-slate-800 font-bold mb-2">1.3%</p>
             <p class="text-base text-slate-800 mb-6">
               Fee is capped at N2000 per transaction
             </p>
@@ -525,17 +633,15 @@ import Pricingcalculator from "../components/pricingcalculator.vue";
               International cards are charged and settled in naira
             </p>
           </div>
-         
-          <!-- pricing calculator -->
-           <div class=""> 
-            <Pricingcalculator />
-           </div>
         </div>
-          <
+
+        <!-- pricing calculator -->
+        <div class="">
+          <Pricingcalculator />
+        </div>
       </div>
-        
-  </section>
-        
+    </section>
+
     <!--Get started section-->
 
     <section class="flex items-center px-16 py-20">
@@ -557,7 +663,7 @@ import Pricingcalculator from "../components/pricingcalculator.vue";
 
         <!-- Right: Form Card -->
         <div
-          class="md:w-2/3 relative w-full rounded-2xl overflow-hidden"
+          class="w-full md:w-2/3 relative rounded-2xl overflow-hidden"
           style="background-color: #dcfce7"
         >
           <!-- Orange blob top-right -->
@@ -583,13 +689,16 @@ import Pricingcalculator from "../components/pricingcalculator.vue";
           ></div>
 
           <!-- Form Content -->
-          <div class="relative z-10 p-12">
-            <h3 class="text-slate-800 text-xl font-light mb-8">Get in touch</h3>
+          <div class="relative z-10 py-10 px-4">
+            <h3 class="text-slate-800 text-xl font-semibold mb-8">
+              Get in touch
+            </h3>
 
             <div class="flex flex-col gap-4">
               <!-- Business Name -->
               <input
-                type="string"
+                v-model="phone"
+                type="text"
                 placeholder="Phone no"
                 class="w-full px-5 py-4 rounded-xl text-slate-800 placeholder-slate-600 outline-none border-none"
                 style="background-color: #86efac"
@@ -602,15 +711,19 @@ import Pricingcalculator from "../components/pricingcalculator.vue";
                 >
                 </label>
                 <select
-                  id="reason"
+                  v-model="reason"
                   name="reason"
                   class="w-full px-5 py-4 rounded-xl text-slate-800 placeholder-slate-600 outline-none border-none appearance-none bg-[#86efac] pr-8"
                 >
                   <option value="" disabled selected>Select a reason</option>
-                  <option value="support">Account Opening</option>
-                  <option value="sales">Payment Issues</option>
-                  <option value="feedback">General Enquiry</option>
-                  <option value="other">Make an Enquiry</option>
+
+                  <option
+                    v-for="item in callBackReason"
+                    :key="item.callbackreasonid"
+                    :value="item.callbackreasonid"
+                  >
+                    {{ item.callbackreason }}
+                  </option>
                 </select>
                 <div
                   class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-slate-300"
@@ -628,7 +741,30 @@ import Pricingcalculator from "../components/pricingcalculator.vue";
                 class="w-40 mx-auto py-4 rounded-full font-semibold bg-lime-600 text-white hover:bg-lime-700 shadow-lg shadow-lime-500/50 transition duration-300"
                 @click="handleSignup"
               >
-                Sign up
+                Request Call
+              </button>
+            </div>
+          </div>
+
+          <div
+            v-if="showSuccessPopup"
+            class="fixed inset-0 flex items-center justify-center z-50"
+          >
+            <div class="bg-white rounded-xl p-8 w-80 text-center relative">
+              <button @click="closePopup" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700">
+                X
+              </button>
+
+              <div class="text-green-600 text-6xl mb-4">✔️</div>
+              <h3 class="text-lg font-semibold mb-2">
+                Your Report was successfully created
+              </h3>
+              <p class="text-gray-600 mb-4">We will get back to you shortly.</p>
+              <button
+                class="bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700 transition"
+                @click="showSuccessPopup = false"
+              >
+                OK
               </button>
             </div>
           </div>

@@ -762,7 +762,7 @@ const handleSignup = async () => {
               <p class="text-gray-600 mb-4">We will get back to you shortly.</p>
               <button
                 class="bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700 transition"
-                @click="showSuccessPopup = false"
+                @click="closePopup"
               >
                 OK
               </button>

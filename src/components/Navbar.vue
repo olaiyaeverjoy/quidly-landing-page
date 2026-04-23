@@ -11,23 +11,23 @@ const toggleMenu = () => {
 </script>
 
 <template>
-  <div class="bg-gray-100 ">
+  <div class="bg-white ">
     <nav class="w-full mx-4 sm:px-6 lg:px-8 px-4 py-6 border-t">
       <div class="flex justify-between items-center" data-aos="fade-down">
         <img class="w-[99px] h-[35px] object-contain"  :src="logo" alt="" />
 
         <ul class="hidden sm:flex gap-7 items-center">
           <li>
-            <a class="font-semibold" href="">Home</a>
+            <a class="font-semibold text-lime-600" href="">Home</a>
           </li>
           <li>
-            <a class="font-semibold" href="">About</a>
+            <a class="font-semibold text-lime-600" href="">About</a>
           </li>
           <li>
-            <a class="font-semibold" href="">Services</a>
+            <a class="font-semibold text-lime-600" href="">Services</a>
           </li>
           <li>
-            <a class="font-semibold" href="">Prices</a>
+            <a class="font-semibold text-lime-600" href="">Prices</a>
           </li>
         </ul>
 

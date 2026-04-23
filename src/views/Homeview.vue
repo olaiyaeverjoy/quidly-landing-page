@@ -7,6 +7,8 @@ import { useToast } from "vue-toastification";
 
 import Pricingcalculator from "../components/pricingcalculator.vue";
 
+import bgImage from '../assets/img/bg-img.jpeg'
+
 const phone = ref("");
 const reason = ref("");
 
@@ -114,12 +116,13 @@ const handleSignup = async () => {
 </script>
 
 <template>
-  <div class="relative bg-gray-100 px-4 sm:px-6 overflow-hidden">
+  <div class="relative bg-gray-100 px-0 sm:px-0 overflow-hidden">
     <Navbar />
 
     <!--hero section-->
     <div
       class="w-full min-h-[70vh] md:min-h-[80vh] flex items-center px-6 md:px-12 relative"
+      :style="{ backgroundImage: `url(${bgImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }"
     >
       <div
         class="flex flex-col md:flex-row items-center justify-between w-full gap-10"
@@ -160,7 +163,7 @@ const handleSignup = async () => {
         <!-- Right Image -->
         <div class="w-full md:w-1/2 flex justify-center md:justify-end">
           <img
-            src="../assets/img/Our Services/new-hero-pic.png"
+            src="../assets/img/new-img .png"
             alt="Hero Image"
             class="w-full max-w-300 object-contain"
             data-aos="fade-up"

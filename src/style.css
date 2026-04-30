@@ -44,3 +44,14 @@
 .card-flip-in {
   animation: flipIn 0.6s ease-out both;
 }
+
+
+.fade-edges {
+  -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent),
+                      linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
+  -webkit-mask-composite: destination-in;
+
+  mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent),
+              linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
+  mask-composite: intersect;
+}

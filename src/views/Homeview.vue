@@ -7,7 +7,7 @@ import { useToast } from "vue-toastification";
 
 import Pricingcalculator from "../components/pricingcalculator.vue";
 
-import bgImage from '../assets/img/bg-img.jpeg'
+import bgImage from "../assets/img/bg-img.jpeg";
 
 const phone = ref("");
 const reason = ref("");
@@ -121,39 +121,41 @@ const handleSignup = async () => {
 
     <!--hero section-->
     <div
-      class="w-full min-h-[70vh] md:min-h-[80vh] flex items-center px-6 md:px-12 relative"
-      :style="{ backgroundImage: `url(${bgImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }"
+      class="w-full min-h-[78vh] flex items-center px-6 md:px-12 py-12 md:py-0 bg-gradient-to-br from-green-50 via-emerald-50 to-green-50"
     >
       <div
-        class="flex flex-col md:flex-row items-center justify-between w-full gap-10"
+        class="flex flex-col md:flex-row items-center justify-between w-full gap-12"
       >
         <!-- Left Content -->
-        <div class="md:w-1/2">
+        <div class="w-full md:w-1/2 text-center md:text-left">
           <h1
-            class="text-3xl text-left md:text-left text-[#1f7de7] sm:text-6xl font-semibold mb-4"
+            class="text-3xl sm:text-4xl lg:text-6xl font-extrabold text-blue-500 leading-tight mb-4"
             data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="0"
           >
-            A Simpler Way To <br />
+            A Simpler Way To<br class="hidden md:block" />
             Collect Payments
           </h1>
 
           <p
-            class="text-xs md:text-xs lg:text-lg text-gray-400 mb-6"
+            class="text-gray-800 text-base sm:text-lg font-medium mb-2"
             data-aos="fade-up"
-            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            Seamless payments for merchants across Nigeria
+          </p>
+
+          <p
+            class="text-green-600 text-sm mb-6 md:mb-8"
+            data-aos="fade-up"
             data-aos-delay="300"
           >
-            Quidly has made payment seamless for merchants <br />
-            across Nigeria
+            Join 8,450+ Nigerian businesses already collecting faster
           </p>
 
           <a
             href="#"
             class="inline-block bg-lime-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-lime-700 transition"
             data-aos="fade-up"
-            data-aos-duration="1000"
             data-aos-delay="600"
           >
             Create Free Account
@@ -161,16 +163,48 @@ const handleSignup = async () => {
         </div>
 
         <!-- Right Image -->
-        <div class="w-full md:w-1/2 flex justify-center md:justify-end">
+        <div
+          class="w-full md:w-1/2 flex items-center justify-center md:justify-end relative"
+        >
+          <!-- Glow -->
+          <div
+            class="absolute w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-gradient-to-br from-blue-400 via-blue-500 to-blue-700 rounded-full blur-3xl opacity-60 md:opacity-70"
+          ></div>
+
           <img
-            src="../assets/img/new-img .png"
+            src="../assets/img/test2.png"
             alt="Hero Image"
-            class="w-full max-w-300 object-contain"
+            class="relative w-full max-w-xs sm:max-w-sm md:max-w-md object-contain"
             data-aos="fade-up"
             data-aos-duration="2000"
           />
         </div>
       </div>
+    </div>
+
+    <!-- Trusted Section -->
+    <div class="bg-white py-5 px-12 border-t border-gray-100 text-center">
+      <p class="text-gray-500 text-sm mb-3">Trusted by merchants at</p>
+      <div class="flex justify-center gap-3 flex-wrap mb-3">
+        <span
+          v-for="partner in [
+            'Paystack',
+            'Flutterwave',
+            'GTBank',
+            'Opay',
+            'PalmPay',
+            'Access Bank',
+          ]"
+          :key="partner"
+          class="border border-gray-300 rounded-full px-4 py-1.5 text-sm text-gray-600 font-medium"
+          >{{ partner }}</span
+        >
+      </div>
+      <p class="text-sm text-gray-500">
+        <span class="text-green-600 font-semibold">4.99/5</span> from 2,341
+        reviews
+        <span class="text-yellow-400 ml-1">★★★★☆</span>
+      </p>
     </div>
 
     <!--Container section-->
@@ -754,7 +788,10 @@ const handleSignup = async () => {
             class="fixed inset-0 flex items-center justify-center z-50"
           >
             <div class="bg-white rounded-xl p-8 w-80 text-center relative">
-              <button @click="closePopup" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700">
+              <button
+                @click="closePopup"
+                class="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
+              >
                 X
               </button>
 

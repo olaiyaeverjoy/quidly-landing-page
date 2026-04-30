@@ -1,4 +1,4 @@
-<script setup>
+<script setup> 
 import { ref, computed } from "vue";
 
 const amount = ref(null);
@@ -17,7 +17,7 @@ const total = computed(() => {
 
 <template>
   <div
-    class="bg-white grid grid-cols-1 sm:grid-cols-1 max-w-sm mx-auto text-center my-8 p-4 rounded-2xl shadow-xl transition duration-300 hover:scale-105 hover:shadow-xl/30"
+    class="bg-white grid grid-cols-1 sm:grid-cols-1 max-w-xs sm:max-w-sm mx-auto text-center my-8 p-4 rounded-2xl shadow-xl transition duration-300 hover:scale-105 hover:shadow-xl/30"
   >
     <h2 class="text-lg text-gray-900 font-bold mb-4">
       <i class="fa-solid fa-money-bill-1 text-2xl text-green-600 mr-2"></i>Fee/Transactions 

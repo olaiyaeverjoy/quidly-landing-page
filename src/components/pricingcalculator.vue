@@ -1,17 +1,25 @@
-<script setup> 
+<script setup>
 import { ref, computed } from "vue";
 
 const amount = ref(null);
 const placeholder = 20000;
 
+const formatCurrency = (value) => {
+  return new Intl.NumberFormat("en-NG", {
+    style: "currency",
+    currency: "NGN",
+    minimumFractionDigits: 2,
+  }).format(value);
+};
+
 const interest = computed(() => {
   const value = amount.value ?? placeholder;
-  return (value * 0.013).toFixed(2);
+  return formatCurrency(value * 0.013);
 });
 
 const total = computed(() => {
   const value = amount.value ?? placeholder;
-  return (value - value * 0.013).toFixed(2);
+  return formatCurrency(value - value * 0.013);
 });
 </script>
 
@@ -20,15 +28,18 @@ const total = computed(() => {
     class="bg-white grid grid-cols-1 sm:grid-cols-1 max-w-xs sm:max-w-sm mx-auto text-center my-8 p-4 rounded-2xl shadow-xl transition duration-300 hover:scale-105 hover:shadow-xl/30"
   >
     <h2 class="text-lg text-gray-900 font-bold mb-4">
-      <i class="fa-solid fa-money-bill-1 text-2xl text-green-600 mr-2"></i>Fee/Transactions 
+      <i class="fa-solid fa-money-bill-1 text-2xl text-green-600 mr-2"></i
+      >Fee/Transactions
     </h2>
-
-    <input
-      type="number"
-      v-model.number="amount"
-      placeholder="20000"
-      class="w-full pl-7 pr-3 py-2 text-sm border border-gray-100 rounded-md hover:outline-gray-600 transition duration-200 bg-gray-200 mb-7"
-    />
+    <div class="relative flex items-center mb-7">
+      <span class="absolute left-3 text-gray-900 text-sm font-medium"> ₦ </span>
+      <input
+        type="number"
+        v-model.number="amount"
+        placeholder="20000"
+        class="w-full pl-7 pr-3 py-2 text-sm text-gray-700 border border-gray-100 rounded-md hover:outline-gray-600 transition duration-200 bg-gray-200"
+      />
+    </div>
 
     <div
       class="text-left space-y-1 space-x-1.5 text-gray-900 font-bold text-sm gap-2"

@@ -40,9 +40,9 @@ const toggleMenu = () => {
 
         <!--Hamburger -->
 
-        <button @click="toggleMenu" class="sm:hidden focus:outline-none">
+        <button @click="toggleMenu" class="sm:hidden px-6 focus:outline-none">
           <svg
-            class="w-6 h-6"
+            class="w-6 h-6 "
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"

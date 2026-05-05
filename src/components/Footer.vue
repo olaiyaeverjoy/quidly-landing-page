@@ -14,14 +14,19 @@
             <h3 class="text-xl font-semibold mb-4">Product</h3>
             <ul class="space-y-4 text-gray-600">
               <li>
-                <a href="about.html" class="hover:text-blue-600">Pricing</a>
+                <a href="about.html" class="hover:text-blue-600">SellDesk</a>
               </li>
               <li>
-                <a href="about.html" class="hover:text-blue-600">Conditions</a>
+                <a href="about.html" class="hover:text-blue-600">Utility Box</a>
               </li>
               <li>
                 <a href="our-history.html" class="hover:text-blue-600"
-                  >Terms of Services</a
+                  >Invoicing</a
+                >
+              </li>
+              <li>
+                <a href="about.html" class="hover:text-blue-600"
+                  >Pricing</a
                 >
               </li>
               <li>
@@ -30,18 +35,13 @@
                 >
               </li>
               <li>
-                <a href="about.html" class="hover:text-blue-600"
-                  >Dispute Resolution</a
-                >
-              </li>
-              <li>
                 <a href="team.html" class="hover:text-blue-600"
-                  >New Guests List</a
+                  >Conditions</a
                 >
               </li>
               <li>
                 <a href="about.html" class="hover:text-blue-600"
-                  >The Team List</a
+                  >Terms of Services</a
                 >
               </li>
             </ul>

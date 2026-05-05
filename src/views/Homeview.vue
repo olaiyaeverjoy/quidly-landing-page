@@ -209,7 +209,7 @@ const handleSignup = async () => {
 
     <!--Container section-->
 
-    <div class="max-w-7xl mx-auto px-4 sm:py-16">
+    <div class="max-w-7xl mx-auto px-4 py-6 sm:py-16">
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
         <!-- Card 1 -->
         <div

@@ -9,6 +9,14 @@ import Pricingcalculator from "../components/pricingcalculator.vue";
 
 import bgImage from "../assets/img/bg-img.jpeg";
 
+const current = ref(0);
+
+onMounted(() => {
+  setInterval(() => {
+    current.value = current.value === 0 ? 1 : 0;
+  }, 6000);
+});
+
 const phone = ref("");
 const reason = ref("");
 
@@ -172,9 +180,19 @@ const handleSignup = async () => {
           ></div>
 
           <img
+            v-if="current === 0"
             src="../assets/img/test2.png"
             alt="Hero Image"
-            class="relative w-full max-w-xs sm:max-w-sm md:max-w-md object-contain"
+            class="relative w-full max-w-xs sm:max-w-sm md:max-w-md object-contain transition-opacity duration-700"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          />
+
+          <img
+            v-else
+            src="../assets/img/phone-mockup.png"
+            class="w-full max-w-xs sm:max-w-sm md:max-w-md object-contain transition-opacity duration-700"
+            alt="Hero Image 2"
             data-aos="fade-up"
             data-aos-duration="2000"
           />
@@ -455,7 +473,7 @@ const handleSignup = async () => {
         </div>
       </div>
 
-      <!--Code from claude-->
+      <!---->
 
       <section class="flex items-center py-20 px-6 md:px-16">
         <div
@@ -546,7 +564,7 @@ const handleSignup = async () => {
             <!-- Content Column -->
             <div class="">
               <!--Container block-->
-              <div class="bg-slate-200 flex rounded-md px-6 py-6 mb-2 gap-4">
+              <div class="bg-slate-200 flex rounded-md px-6 py-6 mb-2 gap-4" data-aos="fade-left">
                 <div class="text-3xl my-auto">
                   <i class="fa-solid fa-money-bill-wave text-green-600"></i>
                 </div>
@@ -561,7 +579,7 @@ const handleSignup = async () => {
                   </p>
                 </div>
               </div>
-              <div class="bg-slate-200 flex rounded-md px-6 py-6 mb-2 gap-4">
+              <div class="bg-slate-200 flex rounded-md px-6 py-6 mb-2 gap-4" data-aos="fade-right">
                 <div class="text-3xl my-auto">
                   <i class="fa-solid fa-circle-check text-green-600"></i>
                 </div>
@@ -575,7 +593,7 @@ const handleSignup = async () => {
                   </p>
                 </div>
               </div>
-              <div class="bg-slate-200 flex rounded-md px-6 py-6 mb-2 gap-4">
+              <div class="bg-slate-200 flex rounded-md px-6 py-6 mb-2 gap-4" data-aos="fade-left">
                 <div class="text-3xl my-auto">
                   <i class="fa-solid fa-gears text-green-600"></i>
                 </div>
@@ -589,7 +607,7 @@ const handleSignup = async () => {
                   </p>
                 </div>
               </div>
-              <div class="bg-slate-200 flex rounded-md px-6 py-6 gap-4">
+              <div class="bg-slate-200 flex rounded-md px-6 py-6 gap-4" data-aos="fade-right">
                 <div class="text-3xl my-auto">
                   <i class="fa-solid fa-credit-card text-green-600"></i>
                 </div>
@@ -623,6 +641,9 @@ const handleSignup = async () => {
         >
           <div
             class="min-w-62.5 bg-white rounded-2xl max-w-md mx-auto px-8 py-8 text-gray-500 shadow-xl"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
           >
             <div class="flex items-center gap-3 mb-5">
               <i class="fa-solid fa-money-bills text-2xl text-green-600"></i>
@@ -649,6 +670,9 @@ const handleSignup = async () => {
 
           <div
             class="min-w-62.5 bg-white rounded-2xl max-w-md mx-auto px-8 py-8 text-gray-500 shadow-xl"
+            data-aos="flip-right"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
           >
             <div class="flex items-center gap-3 mb-5">
               <i class="fa-regular fa-credit-card text-2xl text-green-600"></i>

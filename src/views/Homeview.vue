@@ -121,6 +121,9 @@ const handleSignup = async () => {
     toast.error("Reason not added");
   }
 };
+
+
+
 </script>
 
 <template>
@@ -162,7 +165,7 @@ const handleSignup = async () => {
 
           <a
             href="#"
-            class="inline-block bg-lime-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-lime-700 transition"
+            class="inline-block px-7 py-3 rounded-full font-medium text-gray-800 bg-gradient-to-r from-[#dff7b8] via-[#b8f06d] to-[#6fd625] shadow-[0_8px_20px_rgba(151,237,82,0.25)] hover:shadow-[0_12px_28px_rgba(151,237,82,0.35)] hover:-translate-y-0.5 transition-all duration-300"
             data-aos="fade-up"
             data-aos-delay="600"
           >
@@ -309,7 +312,7 @@ const handleSignup = async () => {
 
     <!--About us-->
 
-    <section class="py-24">
+    <section id="about" class="py-24">
       <div class="max-w-7xl mx-auto px-4">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
           <!-- Image Column -->
@@ -369,6 +372,7 @@ const handleSignup = async () => {
 
     <!--Services & Why choose us-->
     <div
+      id="services"
       class="bottom-0 left-0 w-full bg-gradient-to-r from-slate-100 to-green-100"
     >
       <div class="max-w-7xl mx-auto px-4 py-20">
@@ -626,7 +630,7 @@ const handleSignup = async () => {
     </div>
 
     <!--Our Pricing-->
-    <section>
+    <section id="pricing">
       <div class="max-w-4xl mx-auto py-20 px-4">
         <div class="flex items-center justify-center position-absolute my-12">
           <h2

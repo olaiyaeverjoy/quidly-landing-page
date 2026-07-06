@@ -121,9 +121,6 @@ const handleSignup = async () => {
     toast.error("Reason not added");
   }
 };
-
-
-
 </script>
 
 <template>
@@ -193,8 +190,8 @@ const handleSignup = async () => {
 
           <img
             v-else
-            src="../assets/img/phone-mockup.png"
-            class="w-full max-w-xs sm:max-w-sm md:max-w-md object-contain transition-opacity duration-700"
+            src="../assets/img/new-phone.jpeg"
+            class="relative w-full max-w-[240px] sm:max-w-[280px] md:max-w-[340px]  h-auto object-contain transition-opacity duration-700"
             alt="Hero Image 2"
             data-aos="fade-up"
             data-aos-duration="2000"
@@ -568,7 +565,10 @@ const handleSignup = async () => {
             <!-- Content Column -->
             <div class="">
               <!--Container block-->
-              <div class="bg-slate-200 flex rounded-md px-6 py-6 mb-2 gap-4" data-aos="fade-left">
+              <div
+                class="bg-slate-200 flex rounded-md px-6 py-6 mb-2 gap-4"
+                data-aos="fade-left"
+              >
                 <div class="text-3xl my-auto">
                   <i class="fa-solid fa-money-bill-wave text-green-600"></i>
                 </div>
@@ -583,7 +583,10 @@ const handleSignup = async () => {
                   </p>
                 </div>
               </div>
-              <div class="bg-slate-200 flex rounded-md px-6 py-6 mb-2 gap-4" data-aos="fade-right">
+              <div
+                class="bg-slate-200 flex rounded-md px-6 py-6 mb-2 gap-4"
+                data-aos="fade-right"
+              >
                 <div class="text-3xl my-auto">
                   <i class="fa-solid fa-circle-check text-green-600"></i>
                 </div>
@@ -597,7 +600,10 @@ const handleSignup = async () => {
                   </p>
                 </div>
               </div>
-              <div class="bg-slate-200 flex rounded-md px-6 py-6 mb-2 gap-4" data-aos="fade-left">
+              <div
+                class="bg-slate-200 flex rounded-md px-6 py-6 mb-2 gap-4"
+                data-aos="fade-left"
+              >
                 <div class="text-3xl my-auto">
                   <i class="fa-solid fa-gears text-green-600"></i>
                 </div>
@@ -611,7 +617,10 @@ const handleSignup = async () => {
                   </p>
                 </div>
               </div>
-              <div class="bg-slate-200 flex rounded-md px-6 py-6 gap-4" data-aos="fade-right">
+              <div
+                class="bg-slate-200 flex rounded-md px-6 py-6 gap-4"
+                data-aos="fade-right"
+              >
                 <div class="text-3xl my-auto">
                   <i class="fa-solid fa-credit-card text-green-600"></i>
                 </div>

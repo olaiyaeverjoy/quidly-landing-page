@@ -160,11 +160,11 @@ const handleSignup = async () => {
             data-aos="fade-up"
             data-aos-delay="300"
           >
-            Join 8,450+ Nigerian businesses already collecting faster
+            Join many Nigerian businesses already collecting faster
           </p>
 
           <a
-            href="#"
+            href="merchant-app.quidly.ng/#/signup"
             class="inline-block px-7 py-3 rounded-full font-medium text-gray-800 bg-gradient-to-r from-[#dff7b8] via-[#b8f06d] to-[#6fd625] shadow-[0_8px_20px_rgba(151,237,82,0.25)] hover:shadow-[0_12px_28px_rgba(151,237,82,0.35)] hover:-translate-y-0.5 transition-all duration-300"
             data-aos="fade-up"
             data-aos-delay="600"
@@ -204,7 +204,7 @@ const handleSignup = async () => {
     </div>
 
     <!-- Trusted Section -->
-    <div class="bg-white py-5 px-12 border-t border-gray-100 text-center">
+    <!-- <div class="bg-white py-5 px-12 border-t border-gray-100 text-center">
       <p class="text-gray-500 text-sm mb-3">Trusted by merchants at</p>
       <div class="flex justify-center gap-3 flex-wrap mb-3">
         <span
@@ -226,7 +226,7 @@ const handleSignup = async () => {
         reviews
         <span class="text-yellow-400 ml-1">★★★★☆</span>
       </p>
-    </div>
+    </div> -->
 
     <!--Container section-->
 

@@ -29,7 +29,7 @@
                   >Pricing</a
                 >
               </li>
-              <li>
+              <!-- <li>
                 <a href="about.html" class="hover:text-blue-600"
                   >Privacy Policies</a
                 >
@@ -43,7 +43,7 @@
                 <a href="about.html" class="hover:text-blue-600"
                   >Terms of Services</a
                 >
-              </li>
+              </li> -->
             </ul>
           </div>
 
@@ -70,14 +70,14 @@
               <i class="fa-brands fa-linkedin text-green-600 text-3xl"></i>
               <i class="fa-brands fa-instagram text-green-600 text-3xl"></i>
             </div>
-            <p class="mb-6">Stay Excited, Subscribe to our
+            <!-- <p class="mb-6">Stay Excited, Subscribe to our
               Newsletter</p>
             <div class="relative w-80">
               <input type="text" placeholder="Your Email" class=" w-full bg-blue-100 rounded-full px-7 py-3 pr-24 outline-none">
               <button class="absolute right-1 top-1 bottom-1 bg-blue-600 text-white px-4 rounded-full">
                 <i class="fa-solid fa-arrow-right"></i>
               </button>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>

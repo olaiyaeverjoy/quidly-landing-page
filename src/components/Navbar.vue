@@ -12,7 +12,12 @@ const toggleMenu = () => {
 const sections = ["home", "services", "pricing", "about", "contact"];
 
 const scrollToSection = (sectionId) => {
+  if (sectionId === "home") {
+    window.location.reload();
+    return;
+  }
   if (sections.includes(sectionId)) {
+    activeSection.value = sectionId;
     document.getElementById(sectionId)?.scrollIntoView({
       behavior: "smooth",
     });
@@ -21,23 +26,39 @@ const scrollToSection = (sectionId) => {
 
 const activeSection = ref("home");
 
+
+
 const handleScroll = () => {
-  const scrollPosition = window.scrollY + 150;
+  if (isClickScrolling.value) return;
 
-  sections.forEach((section) => {
+  const scrollY = window.scrollY;
+  const scrollPosition = scrollY + 150;
+
+  // Explicitly force 'home' when at/near the top — avoids overlap bugs entirely
+  if (scrollY < 100) {
+    activeSection.value = "home";
+    return;
+  }
+
+  // Find the last section whose top we've scrolled past
+  let current = activeSection.value;
+
+  for (const section of sections) {
     const element = document.getElementById(section);
-
-    if (
-      element &&
-      scrollPosition >= element.offsetTop &&
-      scrollPosition < element.offsetTop + element.offsetHeight
-    ) {
-      activeSection.value = section;
+    if (element && element.offsetTop <= scrollPosition) {
+      current = section;
     }
-  });
+  }
+
+  activeSection.value = current;
 };
 
 onMounted(() => {
+  window.history.scrollRestoration = "manual";
+  window.scrollTo(0, 0);
+
+  activeSection.value = "home";
+
   window.addEventListener("scroll", handleScroll);
 });
 

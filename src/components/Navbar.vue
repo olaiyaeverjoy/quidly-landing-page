@@ -26,8 +26,6 @@ const scrollToSection = (sectionId) => {
 
 const activeSection = ref("home");
 
-
-
 const handleScroll = () => {
   if (isClickScrolling.value) return;
 
@@ -132,12 +130,12 @@ onUnmounted(() => {
         </ul>
 
         <!--Desktop button -->
-        <button
+        <a
           href="https://merchant-app.quidly.ng/#/signup"
           class="hidden sm:block px-6 py-2.5 rounded-full font-medium text-sm text-gray-800 bg-gradient-to-r from-[#dff7b8] via-[#b8f06d] to-[#6fd625] shadow-[0_8px_20px_rgba(151,237,82,0.25)] hover:shadow-[0_12px_28px_rgba(151,237,82,0.35)] hover:-translate-y-0.5 transition-all duration-300"
         >
           Get started
-        </button>
+        </a>
 
         <!--Hamburger -->
 
@@ -254,12 +252,12 @@ onUnmounted(() => {
               </li>
 
               <li>
-                <button
+                <a
                   href="https://merchant-app.quidly.ng/#/signup"
                   class="mt-4 rounded text-white text-sm py-3 px-6 bg-lime-600 hover:bg-lime-800 transition"
                 >
                   Get started
-                </button>
+                </a>
               </li>
             </ul>
           </div>

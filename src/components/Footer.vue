@@ -14,21 +14,21 @@
             <h3 class="text-xl font-semibold mb-4">Product</h3>
             <ul class="space-y-4 text-gray-600">
               <li>
-                <a href="about.html" class="hover:text-blue-600">SellDesk</a>
+                <a href="https://selldesk.quidly.ng/" class="hover:text-blue-600">SellDesk</a>
               </li>
               <li>
-                <a href="about.html" class="hover:text-blue-600">Utility Box</a>
+                <a href="https://play.google.com/store/apps/details?id=ng.utilitybox.app" class="hover:text-blue-600">Utility Box</a>
               </li>
-              <li>
+              <!-- <li>
                 <a href="our-history.html" class="hover:text-blue-600"
                   >Invoicing</a
                 >
-              </li>
-              <li>
+              </li> -->
+              <!-- <li>
                 <a href="about.html" class="hover:text-blue-600"
                   >Pricing</a
                 >
-              </li>
+              </li> -->
               <!-- <li>
                 <a href="about.html" class="hover:text-blue-600"
                   >Privacy Policies</a
@@ -66,9 +66,24 @@
           <div>
             <h3 class="text-xl font-semibold mb-4">Community</h3>
             <div class="flex gap-7 mb-6">
-              <i class="fa-brands fa-facebook text-green-600 text-3xl"></i>
-              <i class="fa-brands fa-linkedin text-green-600 text-3xl"></i>
-              <i class="fa-brands fa-instagram text-green-600 text-3xl"></i>
+              <a href="https://www.facebook.com/share/17frZWQk1j/?mibextid=wwXIfr"  target="_blank"
+  rel="noopener noreferrer">
+                <i class="fa-brands fa-facebook text-green-600 text-3xl"></i>
+              </a>
+              
+             <a
+  href="https://www.linkedin.com/company/90868086/"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="relative z-50"
+>
+  <i class="fa-brands fa-linkedin text-green-600 text-3xl"></i>
+</a>
+              <a href="https://www.instagram.com/teinnovatecapital_?igsh=NTMxZmY0bjJ2YTQ3"  target="_blank"
+  rel="noopener noreferrer">
+                <i class="fa-brands fa-instagram text-green-600 text-3xl"></i>
+              </a>
+              
             </div>
             <!-- <p class="mb-6">Stay Excited, Subscribe to our
               Newsletter</p>
@@ -91,13 +106,13 @@
               Quidly </a
             >. All rights reserved.
           </p>
-
+<!-- 
           <ul class="flex space-x-6 mt-4 md:mt-0 text-gray-600 text-sm">
             <li><a href="#" class="hover:text-blue-600">Privacy</a></li>
             <li><a href="#" class="hover:text-blue-600">Terms</a></li>
             <li><a href="#" class="hover:text-blue-600">Sitemap</a></li>
             <li><a href="#" class="hover:text-blue-600">Help</a></li>
-          </ul>
+          </ul> -->
         </div>
       </div>
     </div>

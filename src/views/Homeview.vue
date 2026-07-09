@@ -834,7 +834,7 @@ const handleSignup = async () => {
 
               <div class="text-green-600 text-6xl mb-4">✔️</div>
               <h3 class="text-lg font-semibold mb-2">
-                Your Report was successfully created
+                Your Request was successfully created
               </h3>
               <p class="text-gray-600 mb-4">We will get back to you shortly.</p>
               <button

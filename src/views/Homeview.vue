@@ -664,9 +664,9 @@ const handleSignup = async () => {
                 For Account Transfers
               </p>
             </div>
-            <p class="text-4xl text-slate-800 font-bold mb-2">1.3%</p>
+            <p class="text-4xl text-slate-800 font-bold mb-2">1%</p>
             <p class="text-base mb-6 text-slate-800">
-              Fee is capped at N2000 per transaction
+              Fee is capped at N1000 per transaction
             </p>
 
             <!-- OR Divider -->
@@ -694,7 +694,7 @@ const handleSignup = async () => {
 
             <p class="text-4xl text-slate-800 font-bold mb-2">1.3%</p>
             <p class="text-base text-slate-800 mb-6">
-              Fee is capped at N2000 per transaction
+              MasterCard & Visa fees capped at 1500
             </p>
             <!-- OR Divider -->
             <div class="flex items-center my-6">

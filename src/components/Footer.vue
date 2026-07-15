@@ -1,49 +1,49 @@
-<script setup>
-
-</script>
+<script setup></script>
 
 <template>
   <footer class="bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Middle Section -->
       <div class="mt-12 pt-16 pb-12">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10  ">
-
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           <!-- Products -->
           <div>
             <h3 class="text-xl font-semibold mb-4">Product</h3>
             <ul class="space-y-4 text-gray-600">
               <li>
-                <a href="https://selldesk.quidly.ng/" class="hover:text-blue-600">SellDesk</a>
+                <a
+                  href="https://selldesk.quidly.ng/"
+                  class="hover:text-blue-600"
+                  >SellDesk</a
+                >
               </li>
               <li>
-                <a href="https://play.google.com/store/apps/details?id=ng.utilitybox.app" class="hover:text-blue-600">Utility Box</a>
+                <a
+                  href=""
+                  class="hover:text-blue-600"
+                  >Quidly payment-widget</a
+                >
               </li>
-              <!-- <li>
+              <li>
                 <a href="our-history.html" class="hover:text-blue-600"
-                  >Invoicing</a
+                  >PaySplit</a
                 >
-              </li> -->
-              <!-- <li>
+              </li>
+              <li>
                 <a href="about.html" class="hover:text-blue-600"
-                  >Pricing</a
+                  >Pay4me</a
                 >
-              </li> -->
-              <!-- <li>
+              </li>
+              <li>
                 <a href="about.html" class="hover:text-blue-600"
-                  >Privacy Policies</a
+                  >CreditList</a
                 >
               </li>
               <li>
                 <a href="team.html" class="hover:text-blue-600"
-                  >Conditions</a
+                  >Collect@Quidly</a
                 >
               </li>
-              <li>
-                <a href="about.html" class="hover:text-blue-600"
-                  >Terms of Services</a
-                >
-              </li> -->
             </ul>
           </div>
 
@@ -53,37 +53,41 @@
             <p class="text-gray-600 pb-3">
               47 Progress College Road, Agege, Lagos
             </p>
-            <p class="text-gray-600 leading-relaxed ">
+            <p class="text-gray-600 leading-relaxed">
               <a href="contact.html" class="text-blue-600 hover:underline">
                 Contact Us </a
               >: 0808-922-4449, 0813-282-2731. <br />
               Our email: admin@teinnovatecapital.ng
             </p>
-            
           </div>
 
           <!-- Community -->
           <div>
             <h3 class="text-xl font-semibold mb-4">Community</h3>
             <div class="flex gap-7 mb-6">
-              <a href="https://www.facebook.com/share/17frZWQk1j/?mibextid=wwXIfr"  target="_blank"
-  rel="noopener noreferrer">
+              <a
+                href="https://www.facebook.com/share/17frZWQk1j/?mibextid=wwXIfr"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i class="fa-brands fa-facebook text-green-600 text-3xl"></i>
               </a>
-              
-             <a
-  href="https://www.linkedin.com/company/90868086/"
-  target="_blank"
-  rel="noopener noreferrer"
-  class="relative z-50"
->
-  <i class="fa-brands fa-linkedin text-green-600 text-3xl"></i>
-</a>
-              <a href="https://www.instagram.com/teinnovatecapital_?igsh=NTMxZmY0bjJ2YTQ3"  target="_blank"
-  rel="noopener noreferrer">
+
+              <a
+                href="https://www.linkedin.com/company/90868086/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="relative z-50"
+              >
+                <i class="fa-brands fa-linkedin text-green-600 text-3xl"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/teinnovatecapital_?igsh=NTMxZmY0bjJ2YTQ3"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i class="fa-brands fa-instagram text-green-600 text-3xl"></i>
               </a>
-              
             </div>
             <!-- <p class="mb-6">Stay Excited, Subscribe to our
               Newsletter</p>
@@ -106,7 +110,7 @@
               Quidly </a
             >. All rights reserved.
           </p>
-<!-- 
+          <!-- 
           <ul class="flex space-x-6 mt-4 md:mt-0 text-gray-600 text-sm">
             <li><a href="#" class="hover:text-blue-600">Privacy</a></li>
             <li><a href="#" class="hover:text-blue-600">Terms</a></li>

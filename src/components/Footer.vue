@@ -18,31 +18,19 @@
                 >
               </li>
               <li>
-                <a
-                  href=""
-                  class="hover:text-blue-600"
-                  >Quidly payment-widget</a
-                >
+                <a class="hover:text-blue-600">Quidly payment-widget</a>
               </li>
               <li>
-                <a href="our-history.html" class="hover:text-blue-600"
-                  >PaySplit</a
-                >
+                <a class="hover:text-blue-600">PaySplit</a>
               </li>
               <li>
-                <a href="about.html" class="hover:text-blue-600"
-                  >Pay4me</a
-                >
+                <a class="hover:text-blue-600">Pay4me</a>
               </li>
               <li>
-                <a href="about.html" class="hover:text-blue-600"
-                  >CreditList</a
-                >
+                <a class="hover:text-blue-600">CreditList</a>
               </li>
               <li>
-                <a href="team.html" class="hover:text-blue-600"
-                  >Collect@Quidly</a
-                >
+                <a class="hover:text-blue-600">Collect@Quidly</a>
               </li>
             </ul>
           </div>

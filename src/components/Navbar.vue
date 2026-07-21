@@ -130,16 +130,25 @@ onUnmounted(() => {
         </ul>
 
         <!--Desktop button -->
-        <a
-          href="https://merchant-app.quidly.ng/#/signup"
-          class="hidden sm:block px-6 py-2.5 rounded-full font-medium text-sm text-gray-800 bg-gradient-to-r from-[#dff7b8] via-[#b8f06d] to-[#6fd625] shadow-[0_8px_20px_rgba(151,237,82,0.25)] hover:shadow-[0_12px_28px_rgba(151,237,82,0.35)] hover:-translate-y-0.5 transition-all duration-300"
-        >
-          Get started
-        </a>
+        <div class="flex gap-3">
+          <a
+            href="https://merchant-app.quidly.ng/#/signup"
+            class="hidden sm:block px-6 py-2.5 rounded-full font-medium text-sm text-gray-800 bg-gradient-to-r from-[#dff7b8] via-[#b8f06d] to-[#6fd625] shadow-[0_8px_20px_rgba(151,237,82,0.25)] hover:shadow-[0_12px_28px_rgba(151,237,82,0.35)] hover:-translate-y-0.5 transition-all duration-300"
+          >
+            Get started here ➜
+          </a>
+
+          <a
+            href="https://merchant-app.quidly.ng/"
+            class="hidden sm:inline-block px-4 py-2.5 text-sm font-medium text-gray-700 hover:text-green-600 transition-colors duration-200"
+          >
+            Login
+          </a>
+        </div>
 
         <!--Hamburger -->
 
-        <button @click="toggleMenu" class="sm:hidden px-6 focus:outline-none">
+        <!-- <button @click="toggleMenu" class="sm:hidden px-6 focus:outline-none">
           <svg
             class="w-6 h-6"
             fill="none"
@@ -153,33 +162,49 @@ onUnmounted(() => {
               d="M4 6h16M4 12h16M4 18h16"
             />
           </svg>
+        </button> -->
+        <button
+          @click="toggleMenu"
+          class="sm:hidden relative w-6 h-6 flex flex-col justify-center items-center"
+        >
+          <span
+            class="block absolute h-0.5 w-6 bg-gray-800 transition-all duration-300"
+            :class="isOpen ? 'rotate-45' : '-translate-y-2'"
+          ></span>
+          <span
+            class="block absolute h-0.5 w-6 bg-gray-800 transition-all duration-300"
+            :class="isOpen ? 'opacity-0' : 'opacity-100'"
+          ></span>
+          <span
+            class="block absolute h-0.5 w-6 bg-gray-800 transition-all duration-300"
+            :class="isOpen ? '-rotate-45' : 'translate-y-2'"
+          ></span>
         </button>
       </div>
 
       <!--Mobile view-->
       <transition
-        enter-active-class="transition duration-300 ease-out"
-        enter-from-class="translate-x-full opacity-0"
-        enter-to-class="translate-x-0 opacity-100"
-        leave-active-class="transition duration-300 ease-in"
-        leave-from-class="translate-x-0 opacity-100"
-        leave-to-class="translate-x-full opacity-0"
+        enter-active-class="transition-all duration-300 ease-out"
+        enter-from-class="opacity-0 -translate-y-2"
+        enter-to-class="opacity-100 translate-y-0"
+        leave-active-class="transition-all duration-200 ease-in"
+        leave-from-class="opacity-100 translate-y-0"
+        leave-to-class="opacity-0 -translate-y-2"
       >
-        <div v-if="isOpen" class="fixed inset-0 z-50 flex sm:hidden">
+        <div
+          v-if="isOpen"
+          class="fixed inset-0 top-[72px] z-50 sm:hidden"
+        >
           <!-- Backdrop -->
-          <div
+          <!-- <div
             class="absolute inset-0 bg-black/40 backdrop-blur-sm"
             @click="isOpen = false"
-          ></div>
+          ></div> -->
 
-          <!-- Drawer -->
+          <!-- Dropdown panel -->
           <div
-            class="relative ml-auto w-3/4 max-w-sm h-full bg-white shadow-xl p-6 flex flex-col"
+            class="relative w-full h-full bg-white shadow-xl p-6 flex flex-col overflow-y-auto"
           >
-            <!-- Cancel button -->
-            <button @click="isOpen = false" class="self-end text-2xl mb-6">
-              ✕
-            </button>
 
             <!-- Menu -->
             <ul class="flex flex-col gap-6 text-left">
@@ -251,12 +276,20 @@ onUnmounted(() => {
                 </a>
               </li>
 
-              <li>
+              <hr class="faded" />
+
+              <li class="flex flex-col gap-3 w-full">
                 <a
                   href="https://merchant-app.quidly.ng/#/signup"
-                  class="mt-4 rounded text-white text-sm py-3 px-6 bg-lime-600 hover:bg-lime-800 transition"
+                  class="block w-full text-center px-6 py-3 rounded-full font-medium text-sm text-gray-800 bg-gradient-to-r from-[#dff7b8] via-[#b8f06d] to-[#6fd625] shadow-[0_8px_20px_rgba(151,237,82,0.25)] hover:shadow-[0_12px_28px_rgba(151,237,82,0.35)] active:scale-95 transition-all duration-300"
                 >
-                  Get started
+                  Get started here ➜
+                </a>
+                <a
+                  href="https://merchant-app.quidly.ng/"
+                  class="block w-full text-center px-4 py-2.5 text-sm font-medium text-gray-700 hover:text-green-600 transition-colors duration-200"
+                >
+                  Login
                 </a>
               </li>
             </ul>

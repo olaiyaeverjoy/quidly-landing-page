@@ -179,23 +179,23 @@ const handleSignup = async () => {
             class="absolute w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-gradient-to-br from-blue-400 via-blue-500 to-blue-700 rounded-full blur-3xl opacity-60 md:opacity-70"
           ></div>
 
-          <img
-            v-if="current === 0"
-            src="../assets/img/test2.png"
-            alt="Hero Image"
-            class="relative w-full max-w-xs sm:max-w-sm md:max-w-md object-contain transition-opacity duration-700"
-            data-aos="fade-up"
-            data-aos-duration="2000"
-          />
+          <div
+            class="relative w-full max-w-xs sm:max-w-sm md:max-w-md aspect-square flex items-center justify-center"
+          >
+            <img
+              v-show="current === 0"
+              src="../assets/img/test2.png"
+              alt="Hero Image"
+              class="absolute inset-0 w-full h-full object-contain transition-opacity duration-700"
+            />
 
-          <img
-            v-else
-            src="../assets/img/new-phone.jpeg"
-            class="relative w-full max-w-[240px] sm:max-w-[280px] md:max-w-[340px]  h-auto object-contain transition-opacity duration-700"
-            alt="Hero Image 2"
-            data-aos="fade-up"
-            data-aos-duration="2000"
-          />
+            <img
+              v-show="current !== 0"
+              src="../assets/img/phone-mock.png"
+              alt="Hero Image 2"
+              class="absolute inset-0 w-full h-full object-contain transition-opacity duration-700"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -476,9 +476,9 @@ const handleSignup = async () => {
 
       <!---->
 
-      <section class="flex items-center py-20 px-6 md:px-16">
+      <section class="flex items-center py-20 px-4 md:px-16">
         <div
-          class="max-w-6xl mx-auto w-full flex flex-col md:flex-row items-center gap-12"
+          class="max-w-7xl mx-auto w-full flex flex-col md:flex-row items-center gap-12"
         >
           <!-- Left: Heading -->
           <div class="md:w-1/3 flex-shrink-0">

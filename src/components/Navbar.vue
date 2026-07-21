@@ -165,7 +165,7 @@ onUnmounted(() => {
         </button> -->
         <button
           @click="toggleMenu"
-          class="sm:hidden relative w-6 h-6 flex flex-col justify-center items-center"
+          class="sm:hidden relative w-6 h-6 flex flex-col justify-center items-center mr-4"
         >
           <span
             class="block absolute h-0.5 w-6 bg-gray-800 transition-all duration-300"

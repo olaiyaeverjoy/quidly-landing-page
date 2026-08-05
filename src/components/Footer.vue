@@ -10,7 +10,8 @@
         >
           <!-- Quidly as a product -->
           <div class="flex flex-col gap-4 lg:max-w-xs">
-            <h3 class="text-xl font-semibold">Quidly</h3>
+            <img src="../assets/logo/quidly-logo.png" alt="" class="w-[99px] h-[35px] object-contain">
+            <!-- <h3 class="text-xl font-semibold">Quidly</h3> -->
             <p class="text-gray-600 leading-relaxed">
               A product of
               <span class="font-semibold text-gray-700">Teinnovate Capital</span

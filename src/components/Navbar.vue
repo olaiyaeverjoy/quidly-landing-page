@@ -10,7 +10,7 @@ const toggleMenu = () => {
 };
 
 const sections = ["home", "services", "pricing", "about", "contact"];
-
+const isClickScrolling = ref(false);
 const scrollToSection = (sectionId) => {
   if (sectionId === "home") {
     window.location.reload();

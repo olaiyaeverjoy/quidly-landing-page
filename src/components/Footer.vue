@@ -10,7 +10,11 @@
         >
           <!-- Quidly as a product -->
           <div class="flex flex-col gap-4 lg:max-w-xs">
-            <img src="../assets/logo/quidly-logo.png" alt="" class="w-[99px] h-[35px] object-contain">
+            <img
+              src="../assets/logo/quidly-logo.png"
+              alt=""
+              class="w-[99px] h-[35px] object-contain"
+            />
             <!-- <h3 class="text-xl font-semibold">Quidly</h3> -->
             <p class="text-gray-600 leading-relaxed">
               A product of
@@ -31,11 +35,9 @@
               <h3 class="text-xl font-semibold mb-4">Product</h3>
               <ul class="space-y-4 text-gray-600">
                 <li>
-                  <a
-                    href="https://selldesk.quidly.ng/"
-                    class="hover:text-blue-600"
-                    >SellDesk</a
-                  >
+                  <RouterLink to="/selldesk" class="hover:text-blue-600">
+                    SellDesk
+                  </RouterLink>
                 </li>
                 <li>
                   <a class="hover:text-blue-600">Quidly payment-widget</a>
@@ -98,16 +100,15 @@
         <div class="flex flex-col md:flex-row justify-between items-center">
           <p class="text-gray-600 text-sm">
             © Copyrights 2026
-            <a  class="text-blue-600 hover:underline">
-              Quidly </a
-            >. All rights reserved.
+            <a class="text-blue-600 hover:underline"> Quidly </a>. All rights
+            reserved.
           </p>
-          
+
           <ul class="flex space-x-6 mt-4 md:mt-0 text-gray-600 text-sm">
-            <li><a  class="hover:text-blue-600">Privacy</a></li>
-            <li><a  class="hover:text-blue-600">Terms</a></li>
-            <li><a  class="hover:text-blue-600">Sitemap</a></li>
-            <li><a  class="hover:text-blue-600">Help</a></li>
+            <li><a class="hover:text-blue-600">Privacy</a></li>
+            <li><a class="hover:text-blue-600">Terms</a></li>
+            <li><a class="hover:text-blue-600">Sitemap</a></li>
+            <li><a class="hover:text-blue-600">Help</a></li>
           </ul>
         </div>
       </div>

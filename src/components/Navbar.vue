@@ -66,7 +66,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="bg-white">
+  <div class="bg-white fixed top-0 left-0 right-0 w-full border-gray-200 z-50">
     <nav class="w-full mx-4 sm:px-6 lg:px-8 px-4 py-6 border-t">
       <div class="flex justify-between items-center" data-aos="fade-down">
         <img class="w-[99px] h-[35px] object-contain" :src="logo" alt="" />

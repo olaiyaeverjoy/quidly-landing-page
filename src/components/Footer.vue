@@ -32,7 +32,7 @@
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-10 lg:gap-16">
             <!-- Products -->
             <div>
-              <h3 class="text-xl font-semibold mb-4">Product</h3>
+              <h3 class="text-xl font-semibold mb-4">Products</h3>
               <ul class="space-y-4 text-gray-600">
                 <li>
                   <RouterLink to="/selldesk" class="hover:text-blue-600">
@@ -40,7 +40,7 @@
                   </RouterLink>
                 </li>
                 <li>
-                  <a class="hover:text-blue-600">Quidly payment-widget</a>
+                  <a class="hover:text-blue-600">Quidly Payment widget</a>
                 </li>
                 <li><a class="hover:text-blue-600">PaySplit</a></li>
                 <li><a class="hover:text-blue-600">Pay4me</a></li>

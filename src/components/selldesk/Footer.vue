@@ -3,51 +3,7 @@
     <div class="max-w-screen-2xl mx-auto px-5 sm:px-8 lg:px-10 py-12 lg:py-16">
       <!-- Main Footer Content -->
       <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-12 gap-10 lg:gap-12">
-        <!-- Help & Resources -->
-        <div class="xl:col-span-5">
-          <h3 class="text-white font-semibold text-lg tracking-wide mb-2">Help & Resources</h3>
-          <div class="w-full max-w-xs h-px bg-white/20 mb-6"></div>
-
-          <div class="grid grid-cols-2 gap-x-8 gap-y-3 text-sm">
-            <div class="space-y-3">
-              <a
-                v-for="link in helpLinksLeft"
-                :key="link"
-                href="#"
-                class="block text-slate-300 hover:text-white transition-colors"
-              >
-                {{ link }}
-              </a>
-            </div>
-            <div class="space-y-3">
-              <a
-                v-for="link in helpLinksRight"
-                :key="link"
-                href="#"
-                class="block text-slate-300 hover:text-white transition-colors"
-              >
-                {{ link }}
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Free Tools -->
-        <div class="xl:col-span-3">
-          <h3 class="text-white font-semibold text-lg tracking-wide mb-2">Free Tools</h3>
-          <div class="w-full max-w-[240px] h-px bg-white/20 mb-6"></div>
-
-          <div class="space-y-3 text-sm">
-            <a
-              v-for="tool in freeTools"
-              :key="tool"
-              href="#"
-              class="block text-slate-300 hover:text-white transition-colors"
-            >
-              {{ tool }}
-            </a>
-          </div>
-        </div>
+       
 
         <!-- Contact Us -->
         <div class="xl:col-span-4">
@@ -103,7 +59,6 @@
               </div>
               <div>
                 <p class="font-medium">te@teinnovatecapital.ng</p>
-                <p class="text-sm text-gray-400">Toll-free</p>
               </div>
             </div>
 
@@ -147,7 +102,7 @@
                     />
                   </svg>
                 </a>
-                <a href="#" class="hover:text-blue-600 transition-colors" aria-label="Facebook">
+                <a href="https://www.facebook.com/people/SellDesk/61590426912805/" class="hover:text-blue-600 transition-colors" aria-label="Facebook">
                   <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                     <path
                       d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
@@ -164,18 +119,7 @@
       <div class="mt-16 pt-8">
         <div class="w-full h-px bg-white/20 mb-6"></div>
 
-        <div
-          class="flex flex-wrap justify-center lg:justify-start gap-x-5 gap-y-3 text-xs text-gray-400 leading-6"
-        >
-          <a
-            v-for="link in legalLinks"
-            :key="link"
-            href="#"
-            class="hover:text-white transition-colors"
-          >
-            {{ link }}
-          </a>
-        </div>
+        
 
         <div class="mt-8 text-xs text-gray-500 text-center">
           &copy; 2026 SellDesk. All rights reserved.

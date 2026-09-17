@@ -314,11 +314,11 @@ function handleSignupSuccess(result) {
               <h3 class="text-xl font-extrabold text-[#0b2540]">Flexible Customization</h3>
             </div>
 
-            <button
+            <!-- <button
               class="mt-8 bg-[#0b2540] hover:bg-[#0a1f36] transition-colors text-white text-sm font-semibold px-8 py-4 rounded-xl"
             >
               Create Invoice
-            </button>
+            </button> -->
           </div>
 
           <!-- RIGHT: slideshow -->

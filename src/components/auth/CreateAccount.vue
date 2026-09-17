@@ -391,12 +391,7 @@ onBeforeUnmount(() => {
 
     <template v-if="signupStep === 'email'">
       <div>
-        <span
-          class="inline-block bg-sky-50 text-blue-600 text-xs font-semibold tracking-wide px-3 py-1.5 rounded-md"
-        >
-          CREATE YOUR ACCOUNT
-        </span>
-
+       
         <h2
           class="mt-5 text-3xl sm:text-4xl font-extrabold leading-tight text-slate-900"
         >

@@ -13,6 +13,8 @@
     "@tailwindcss/vite": "^4.2.0",
     "aos": "^2.3.4",
     "axios": "^1.20.0",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
     "keycloak-js": "^26.2.4",
     "pinia": "^4.0.3",
     "tailwind-scrollbar-hide": "^4.0.0",

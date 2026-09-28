@@ -13,11 +13,15 @@ import 'vue-toastification/dist/index.css'
 import '@fortawesome/fontawesome-free/css/all.css'
 import { initializeApiClient } from '@/services/api/api.service'
 
-// KEYCLOAK
-import { initializeKeycloak } from '@/services/keycloak/keycloak.service'
 
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+
+import 'vuetify/styles'
+import { createVuetify } from 'vuetify'
+
+const vuetify = createVuetify()
+
 
 initializeApiClient()
 const app = createApp(App)
@@ -26,6 +30,7 @@ const pinia = createPinia()
 app.use(pinia)
 app.use(router)
 app.use(Toast)
+app.use(vuetify)
 
 app.mount('#app')
 

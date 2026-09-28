@@ -22,9 +22,9 @@
               >, licensed by the Central Bank of Nigeria.
             </p>
             <img
-              src="../assets/logo/teinnovate-logo.png"
+              src="../assets/img/teinnovate-logo.jpeg"
               alt="Teinnovate Capital logo"
-              class="h-8 w-auto max-w-[120px] shrink-0 opacity-80"
+              class="w-40"
             />
           </div>
 
@@ -43,7 +43,9 @@
                   <a class="hover:text-blue-600">Quidly Payment widget</a>
                 </li>
                 <li><a class="hover:text-blue-600">PaySplit</a></li>
-                <li><a class="hover:text-blue-600">Pay4me</a></li>
+                 <RouterLink to="/pay4me" class="hover:text-blue-600">
+                    Pay4Me
+                  </RouterLink>
                 <li><a class="hover:text-blue-600">CreditList</a></li>
                 <li><a class="hover:text-blue-600">Collect@Quidly</a></li>
               </ul>

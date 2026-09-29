@@ -6,8 +6,7 @@ import { onMounted, ref } from "vue";
 import { useToast } from "vue-toastification";
 
 import Pricingcalculator from "../components/pricingcalculator.vue";
-
-import bgImage from "../assets/img/bg-img.jpeg";
+import quidlyLogo from "@/assets/logo/quidly-logo.png";
 
 const current = ref(0);
 
@@ -848,6 +847,6 @@ const handleSignup = async () => {
         </div>
       </div>
     </section>
-    <Footer />
+   <Footer product-name="Quidly" :product-logo="quidlyLogo" />
   </div>
 </template>

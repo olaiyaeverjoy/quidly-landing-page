@@ -1,4 +1,15 @@
-<script setup></script>
+<script setup>
+defineProps({
+  productName: {
+    type: String,
+    default: "Quidly",
+  },
+  productLogo: {
+    type: String,
+    default: "",
+  },
+})
+</script>
 
 <template>
   <footer class="bg-white">
@@ -9,24 +20,29 @@
           class="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-18"
         >
           <!-- Quidly as a product -->
-          <div class="flex flex-col gap-4 lg:max-w-xs">
-            <img
-              src="../assets/logo/quidly-logo.png"
-              alt=""
-              class="w-[99px] h-[35px] object-contain"
-            />
-            <!-- <h3 class="text-xl font-semibold">Quidly</h3> -->
-            <p class="text-gray-600 leading-relaxed">
-              A product of
-              <span class="font-semibold text-gray-700">Teinnovate Capital</span
-              >, licensed by the Central Bank of Nigeria.
-            </p>
-            <img
-              src="../assets/img/teinnovate-logo.jpeg"
-              alt="Teinnovate Capital logo"
-              class="w-40"
-            />
-          </div>
+          <!-- Product -->
+<div class="flex flex-col gap-4 lg:max-w-xs">
+  <img
+    v-if="productLogo"
+    :src="productLogo"
+    :alt="`${productName} logo`"
+    class="w-[120px] h-[40px] object-contain object-left"
+  />
+
+  <p class="text-gray-600 leading-relaxed">
+    A product of
+    <span class="font-semibold text-gray-700">
+      Teinnovate Capital
+    </span>,
+    licensed by the Central Bank of Nigeria.
+  </p>
+
+  <img
+    src="../assets/img/teinnovate-logo.jpeg"
+    alt="Teinnovate Capital logo"
+    class="w-40"
+  />
+</div>
 
           <!-- Remaining three columns -->
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-10 lg:gap-16">
@@ -43,9 +59,12 @@
                   <a class="hover:text-blue-600">Quidly Payment widget</a>
                 </li>
                 <li><a class="hover:text-blue-600">PaySplit</a></li>
-                 <RouterLink to="/pay4me" class="hover:text-blue-600">
+                <li>
+                    <RouterLink to="/pay4me" class="hover:text-blue-600">
                     Pay4Me
                   </RouterLink>
+                </li>
+               
                 <li><a class="hover:text-blue-600">CreditList</a></li>
                 <li><a class="hover:text-blue-600">Collect@Quidly</a></li>
               </ul>

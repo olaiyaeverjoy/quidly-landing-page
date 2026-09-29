@@ -1,7 +1,7 @@
 <script setup>
 import Navbar from '../components/selldesk/Navbar.vue'
-import Footer from '../components/selldesk/Footer.vue'
-
+import Footer from '../components/Footer.vue'
+import selldeskLogo from "@/assets/img/logo.png";
 import { reactive } from 'vue'
 import { ref, onMounted, onUnmounted, computed } from 'vue'
 import invoiceImage from '../assets/img/invoice.png'
@@ -727,43 +727,9 @@ function handleSignupSuccess(result) {
 
                 <!-- Pay4Me -->
                 <div v-else class="flex gap-6 items-center">
-                  <div class="w-[145px] bg-neutral-900 rounded-[25px] p-1.5 shadow-2xl rotate-5">
-                    <div class="h-[290px] bg-white rounded-[20px] overflow-hidden text-slate-900">
-                      <div
-                        class="h-[65px] bg-gradient-to-br from-[#0b2540] to-[#123a63] text-white p-3.5 text-[10px] font-extrabold"
-                      >
-                        Pay4Me<br /><span class="opacity-70">Payment request</span>
-                      </div>
-                      <div class="p-3">
-                        <div class="p-2.5 rounded-xl bg-slate-50 mb-2 text-[8px]">
-                          <b>Amount</b><br /><span class="text-base">₦250,000</span>
-                        </div>
-                        <div
-                          class="w-[82px] h-[82px] mx-auto my-3.5 bg-[repeating-conic-gradient(#111_0_25%,#fff_0_50%)] bg-[length:10px_10px] border-[7px] border-white shadow-[0_0_0_1px_#ddd]"
-                        ></div>
-                        <div class="text-center text-[8px] text-slate-500">
-                          Scan to complete payment
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <img class="w-60" src="../assets/img/pay4me-payer.png" alt="">
 
-                  <div
-                    class="w-[145px] bg-neutral-900 rounded-[25px] p-1.5 shadow-2xl -rotate-4 scale-90"
-                  >
-                    <div class="h-[290px] bg-white rounded-[20px] overflow-hidden text-slate-900">
-                      <div
-                        class="h-[65px] bg-gradient-to-br from-[#0b2540] to-[#123a63] text-white p-3.5 text-[10px] font-extrabold"
-                      >
-                        Payment
-                      </div>
-                      <div class="p-3 text-center">
-                        <div class="text-2xl text-emerald-500 my-7">✓</div>
-                        <div class="font-black text-[15px]">Paid securely</div>
-                        <div class="text-[8px] text-slate-500 mt-1">₦250,000 payment completed</div>
-                      </div>
-                    </div>
-                  </div>
+                 
                 </div>
 
                 <!-- CreditList -->
@@ -933,7 +899,7 @@ function handleSignupSuccess(result) {
     </div>
   </section> -->
   </main>
-  <Footer />
+   <Footer product-name="Selldesk" :product-logo="selldeskLogo" />
 </template>
 
 <style scoped>

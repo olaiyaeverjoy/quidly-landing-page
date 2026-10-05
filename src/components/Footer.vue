@@ -50,15 +50,15 @@ defineProps({
             <div>
               <h3 class="text-xl font-semibold mb-4">Products</h3>
               <ul class="space-y-4 text-gray-600">
+               <li>
+                  <a class="hover:text-blue-600">Quidly Payment widget</a>
+                </li>
                 <li>
                   <RouterLink to="/selldesk" class="hover:text-blue-600">
                     SellDesk
                   </RouterLink>
                 </li>
-                <li>
-                  <a class="hover:text-blue-600">Quidly Payment widget</a>
-                </li>
-                <li><a class="hover:text-blue-600">PaySplit</a></li>
+               
                 <li>
                     <RouterLink to="/pay4me" class="hover:text-blue-600">
                     Pay4Me

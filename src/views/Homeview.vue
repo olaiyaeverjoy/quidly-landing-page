@@ -129,7 +129,7 @@ const handleSignup = async () => {
 
     <!--hero section-->
     <div
-      class="w-full min-h-[78vh] flex items-center px-6 md:px-12 py-12 md:py-0 bg-gradient-to-br from-green-50 via-emerald-50 to-green-50"
+      class="w-full min-h-[78vh] flex items-center px-6 md:px-12 pt-28 pb-12 md:py-0 bg-gradient-to-br from-green-50 via-emerald-50 to-green-50"
     >
       <div
         class="flex flex-col md:flex-row items-center justify-between w-full gap-12"

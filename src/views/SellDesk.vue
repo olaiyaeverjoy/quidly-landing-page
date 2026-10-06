@@ -268,7 +268,7 @@ function handleSignupSuccess(result) {
         </div>
       </div>
 
-      <p class="text-center font-bold text-slate-900 mt-8">Trusted by business across Nigeria</p>
+      <p class="text-center font-bold text-slate-900 mt-8">Trusted by businesses across Nigeria</p>
     </section>
 
     <!--Invoice Template Section-->
